@@ -11,10 +11,10 @@
 
 	<ul class="links">
 		<li>
-			<a href="/">home</a>
+			<a href="/">portfolio</a>
 		</li>
 		<li>
-			<a href="/projects">projects</a>
+			<a href="/projects">blog</a>
 		</li>
 		<li>
 			<a href="/resume">resume</a>
@@ -38,7 +38,7 @@
 
 	a {
 		color: inherit;
-		/* text-decoration: none; */
+		text-decoration: none;
 	}
 
 	.logo {

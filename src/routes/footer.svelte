@@ -8,10 +8,10 @@
 		<p><span class="title">{config.title}</span> &copy {new Date().getFullYear()}</p>
 		<ul class="footer-nav">
 			<li>
-				<a href="/">home</a>
+				<a href="/">portfolio</a>
 			</li>
 			<li>
-				<a href="/projects">projects</a>
+				<a href="/projects">blog</a>
 			</li>
 			<li>
 				<a href="/resume">resume</a>
@@ -53,6 +53,10 @@
 			align-items: center;
 		}
 
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
 		.footer-nav {
 			display: flex;
 			gap: var(--size-3);

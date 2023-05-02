@@ -1,5 +1,5 @@
 ---
-title: Second post
+title: But we prepare
 description: Rise of the Content
 date: '2023-4-29'
 categories:
