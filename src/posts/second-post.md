@@ -1,6 +1,6 @@
 ---
 title: Second post
-description: First post.
+description: Rise of the Content
 date: '2023-4-29'
 categories:
   - sveltekit
@@ -16,7 +16,7 @@ published: true
 
 ## Svelte
 
-Media inmside the **static** folder is served from '/'.
+Media inside the **static** folder is served from '/'.
 
 ![djo](favicon.ico)
 

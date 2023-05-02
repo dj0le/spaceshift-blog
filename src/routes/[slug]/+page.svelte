@@ -14,7 +14,7 @@
 <article>
 	<hgroup>
 		<h1>{data.meta.title}</h1>
-		<p>Published at {formatDate(data.meta.date)}</p>
+		<p>{formatDate(data.meta.date)}</p>
 	</hgroup>
 
 	<div class="tags">
@@ -35,6 +35,11 @@
 	}
 
 	h1 {
+		font-family: var(--font-heading);
+		color: var(--brand);
+	}
+
+	h1 {
 		text-transform: capitalize;
 	}
 
@@ -46,11 +51,13 @@
 	.tags {
 		display: flex;
 		gap: var(--size-3);
-		margin-top: var(--size-7);
+		margin-block: var(--size-7);
+		padding-bottom: var(--size-7);
+		border-bottom: 1px solid var(--border);
 	}
 
 	.tags > * {
 		padding: var(--size-2) var(--size-3);
-		border-radius: var(--radius-round);
+		border-radius: var(--radius-2);
 	}
 </style>

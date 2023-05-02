@@ -1,18 +1,64 @@
 <script lang="ts">
 	import * as config from '$lib/config'
+	import { Rss, Github, Mail, Globe } from 'lucide-svelte'
 </script>
 
 <footer>
-	<p><span class="title">{config.title}</span> &copy {new Date().getFullYear()}</p>
+	<div>
+		<p><span class="title">{config.title}</span> &copy {new Date().getFullYear()}</p>
+		<ul class="footer-nav">
+			<li>
+				<a href="/">home</a>
+			</li>
+			<li>
+				<a href="/projects">projects</a>
+			</li>
+			<li>
+				<a href="/resume">resume</a>
+			</li>
+			<li>
+				<a href="/contact">contact</a>
+			</li>
+		</ul>
+	</div>
+	<div class="column">
+		<div class="footer-nav">
+			<button> <Rss /> </button>
+			<button> <Globe /> </button>
+			<button> <Github /> </button>
+			<button> <Mail /> </button>
+		</div>
+	</div>
 </footer>
 
 <style>
-	footer {
-		padding-block: var(--size-7);
-		border-top: 1px solid var(--border);
-	}
-
 	p {
 		color: var(--text-2);
+	}
+	button {
+		padding: 0;
+		font-weight: inherit;
+		background: none;
+		border: none;
+		box-shadow: none;
+		overflow: hidden;
+	}
+
+	@media (min-width: 768px) {
+		footer {
+			padding-block: var(--size-7);
+			border-top: 1px solid var(--border);
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			align-items: center;
+		}
+
+		.footer-nav {
+			display: flex;
+			gap: var(--size-3);
+		}
+		.column {
+			justify-self: end;
+		}
 	}
 </style>

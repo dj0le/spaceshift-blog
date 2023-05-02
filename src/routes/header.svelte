@@ -4,7 +4,10 @@
 </script>
 
 <nav>
-	<a href="/" class="title"> <b>{config.title}</b></a>
+	<div class="logo">
+		<img src="/favicon.ico" alt="logo" />
+		<a href="/" class="title"> <b>{config.title}</b></a>
+	</div>
 
 	<ul class="links">
 		<li>
@@ -18,9 +21,6 @@
 		</li>
 		<li>
 			<a href="/contact">contact</a>
-		</li>
-		<li>
-			<a href="/rss.xml" target="_blank">rss</a>
 		</li>
 	</ul>
 
@@ -38,7 +38,13 @@
 
 	a {
 		color: inherit;
-		text-decoration: none;
+		/* text-decoration: none; */
+	}
+
+	.logo {
+		display: flex;
+		gap: 16px;
+		align-items: center;
 	}
 
 	@media (min-width: 768px) {

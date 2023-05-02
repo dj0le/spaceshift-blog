@@ -1,19 +1,43 @@
 ---
-title: First post
-description: First post.
+title: A Waffly Beginning
+description: The first stage in converting the SPACEshift blog
 date: '2023-4-28'
 categories:
   - sveltekit
-  - svelte
+  - markdown
+  - blog
+# coverImage: '/blogpics/toughchoice.webp'
 published: true
 ---
 
-## Markdown
+<p align="center">
+<img src="/blogpics/toughchoice.webp" alt="touch choice meme">
+</p>
 
-Hey friends
+## Which button?!?
+
+Welcome to my official blog reset. Recently, **Joy of Code** released a great tutorial on setting up markdown blog in Svelte. And, it was great timing. I was about halfway through converting my original blog, so this has really sped up the process. And I think the alpha 1.0 version already looks really slick.
+
+There are some great features out of the box, including the usual markdown features that make dropping content a breeze. Or, the 2 themes (metal and spooky), an RSS feed, and the seamless code highlighting:
+
+You can even choose your preferred VS Code theme for the highlighting:
 
 ```ts
 function greet(name: string) {
 	console.log('hey ${name}!')
 }
 ```
+
+Will the new setup motivate me to push content and you to read it? Time will tell...
+
+Where is all the old content? I went back and forth on whether to start over or just upgrade. Sadly, a lot of it is outdated or wasn't really that engaging. So in the end, I didn't see any reason to pull it forward.
+
+So that leaves a lot of room for growth, and that is what we will try to do. There are a ton of improvements that can be made to both the design and the functionality. At some point, we'll need some better navigation options and I definitely want to put my own stamp on the design, but we'll get there.
+
+If you are reading this article, thank you for being such an early adopter. Subscribe via RSS and keep up to date with the musings. Or, if it's deep into the future, and you loved my content so much, that you read all the way back to the very beginning, then, wow, you are awesome!
+
+Either way, let the journey begin.
+
+### Want to build your own blog from this same starter kit?
+
+[Build a Blazing Fast SvelteKit Markdown Blog](https://youtu.be/RhScu3uqGd0)

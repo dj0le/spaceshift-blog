@@ -8,6 +8,10 @@
 	<title>{config.title}</title>
 </svelte:head>
 
+<main>
+	<h1>SPACEshift</h1>
+	<p>welcome to the SPACEshift, where things are serious and things get done</p>
+</main>
 <section>
 	<ul class="posts">
 		{#each data.posts as post}
