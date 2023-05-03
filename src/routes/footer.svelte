@@ -11,7 +11,7 @@
 				<a href="/">portfolio</a>
 			</li>
 			<li>
-				<a href="/projects">blog</a>
+				<a href="/blog">blog</a>
 			</li>
 			<li>
 				<a href="/resume">resume</a>

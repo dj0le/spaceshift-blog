@@ -13,7 +13,9 @@
 
 <article>
 	<hgroup>
-		<h1>{data.meta.title}</h1>
+		<div class="banner">
+			<h1>{data.meta.title}</h1>
+		</div>
 		<p>{formatDate(data.meta.date)}</p>
 	</hgroup>
 
@@ -35,15 +37,19 @@
 	}
 
 	h1 {
+		font-size: 2.5rem;
 		font-family: var(--font-heading);
-		color: var(--brand);
-	}
-
-	h1 {
+		color: var(--text-3);
 		text-transform: capitalize;
+		margin-left: 7rem;
 	}
 
-	h1 + p {
+	.banner {
+		background-image: url('./postbanner4.svg');
+		padding-block: 2.75rem;
+	}
+
+	p {
 		margin-top: var(--size-2);
 		color: var(--text-2);
 	}
