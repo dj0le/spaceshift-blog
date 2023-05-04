@@ -11,7 +11,7 @@
 		<p>welcome to the</p>
 		<h1 class="gradient-text">SPACEshift</h1>
 		<p>now made with 100% stardust</p>
-		<p>this page is a work in progress, expect things to be broken</p>
+		<p>this page is a work in progress, expect things to be broken, like really broken</p>
 	</div>
 	<div>
 		<h2 class="gradient-text">projects</h2>

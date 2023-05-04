@@ -49,6 +49,10 @@
 		margin-top: var(--size-1);
 	}
 
+	.title {
+		border-bottom: 1px solid var(--text-2);
+	}
+
 	@media (min-width: 768px) {
 		footer {
 			padding-block: var(--size-7);
