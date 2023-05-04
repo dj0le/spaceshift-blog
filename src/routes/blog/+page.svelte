@@ -13,13 +13,14 @@
 		<h1 class="gradient-text">the blog</h1>
 		<ul class="posts">
 			{#each data.posts as post}
-				<li class="post">
-					<div class="banner">
+				<div class="banner">
+					<li class="post">
 						<a href={post.slug} class="title">{post.title}</a>
-					</div>
-					<p class="date">{formatDate(post.date)}</p>
-					<p class="description">{post.description}</p>
-				</li>
+						<img src="/blogbar.svg" class="seperator" alt="" />
+						<p class="date">{formatDate(post.date)}</p>
+						<p class="description">{post.description}</p>
+					</li>
+				</div>
 			{/each}
 		</ul>
 	</div>
@@ -28,28 +29,39 @@
 <style>
 	.posts {
 		display: grid;
-		gap: var(--size-7);
+		grid-template-columns: 1fr 1fr;
+		gap: var(--size-3);
 	}
 	.post {
 		max-inline-size: var(--size-content-3);
 	}
 	.banner {
-		background-image: url('/postbg.svg');
-		padding-block: 1.9rem;
-		background-size: 400px;
+		background-image: url('/blogMainBanner.svg');
+		padding-block: 6.5rem;
 	}
 	.title {
 		font-size: var(--font-size-fluid-1);
 		font-family: var(--font-heading);
-		color: var(--text-3);
+		font-weight: var(--font-weight-8);
 		text-transform: capitalize;
-		margin-left: 4rem;
 	}
 	.date {
-		color: var(--text-2);
+		text-transform: uppercase;
+		margin-top: var(--size-3);
 	}
 	.description {
-		margin-top: var(--size-3);
+		margin-top: var(--size-4);
+	}
+	.seperator {
+		margin-top: var(--size-2);
+	}
+	.title,
+	.seperator,
+	.description,
+	.date {
+		color: var(--text-3);
+		margin-left: 6rem;
+		max-width: 25ch;
 	}
 	div {
 		margin-top: var(--size-7);
@@ -64,5 +76,21 @@
 		-webkit-background-clip: text;
 		background-clip: text;
 		color: transparent;
+	}
+
+	@media (max-width: 768px) {
+		.posts {
+			grid-template-columns: 1fr;
+		}
+		.banner {
+			padding-block: 6.5rem;
+			margin: 0 8px;
+		}
+		.title,
+		.seperator,
+		.description,
+		.date {
+			max-width: 15ch;
+		}
 	}
 </style>
