@@ -15,7 +15,6 @@
 			{#each data.posts as post}
 				<li class="post">
 					<div class="banner">
-						<span><p>01</p></span>
 						<a href={post.slug} class="title">{post.title}</a>
 					</div>
 					<p class="date">{formatDate(post.date)}</p>
@@ -30,14 +29,12 @@
 	.posts {
 		display: grid;
 		gap: var(--size-7);
-		border: 2px solid orange;
 	}
 	.post {
 		max-inline-size: var(--size-content-3);
-		border: 2px solid blue;
 	}
 	.banner {
-		background-image: url('./postbanner4.svg');
+		background-image: url('/postbg.svg');
 		padding-block: 1.9rem;
 		background-size: 400px;
 	}
