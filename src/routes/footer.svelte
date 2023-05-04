@@ -43,6 +43,11 @@
 		box-shadow: none;
 		overflow: hidden;
 	}
+	.footer-nav {
+		display: flex;
+		gap: var(--size-3);
+		margin-top: var(--size-1);
+	}
 
 	@media (min-width: 768px) {
 		footer {
@@ -57,10 +62,7 @@
 			color: inherit;
 			text-decoration: none;
 		}
-		.footer-nav {
-			display: flex;
-			gap: var(--size-3);
-		}
+
 		.column {
 			justify-self: end;
 		}
