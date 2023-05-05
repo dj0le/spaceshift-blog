@@ -8,23 +8,19 @@
 	<title>{config.title}</title>
 </svelte:head>
 
-<main>
-	<div>
-		<h1 class="gradient-text">the blog</h1>
-		<ul class="posts">
-			{#each data.posts as post}
-				<div class="banner">
-					<li class="post">
-						<a href={post.slug} class="title">{post.title}</a>
-						<img src="/blogbar.svg" class="seperator" alt="" />
-						<p class="date">{formatDate(post.date)}</p>
-						<p class="description">{post.description}</p>
-					</li>
-				</div>
-			{/each}
-		</ul>
-	</div>
-</main>
+<h1 class="gradient-text">the blog</h1>
+<ul class="posts">
+	{#each data.posts as post}
+		<div class="banner">
+			<li class="post">
+				<a href={post.slug} class="title">{post.title}</a>
+				<img src="/blogbar.svg" class="seperator" alt="" />
+				<p class="date">{formatDate(post.date)}</p>
+				<p class="description">{post.description}</p>
+			</li>
+		</div>
+	{/each}
+</ul>
 
 <style>
 	.posts {
@@ -38,6 +34,7 @@
 	.banner {
 		background-image: url('/blogMainBanner.svg');
 		padding-block: 6.5rem;
+		margin-top: var(--size-7);
 	}
 	.title {
 		font-size: var(--font-size-fluid-1);
@@ -62,9 +59,6 @@
 		color: var(--text-3);
 		margin-left: 6rem;
 		max-width: 25ch;
-	}
-	div {
-		margin-top: var(--size-7);
 	}
 	h1 {
 		font-family: var(--font-heading);
