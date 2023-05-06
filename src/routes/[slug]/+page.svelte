@@ -45,7 +45,7 @@
 	}
 
 	.banner {
-		background-image: url('/postbg.svg');
+		background-image: var(--postbg);
 		padding-block: 2.75rem;
 	}
 

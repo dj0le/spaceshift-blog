@@ -14,7 +14,7 @@
 		<div class="banner">
 			<li class="post">
 				<a href={post.slug} class="title">{post.title}</a>
-				<img src="/blogbar.svg" class="seperator" alt="" />
+				<div class="line" />
 				<p class="date">{formatDate(post.date)}</p>
 				<p class="description">{post.description}</p>
 			</li>
@@ -28,11 +28,15 @@
 		grid-template-columns: 1fr 1fr;
 		gap: var(--size-3);
 	}
+	.posts:nth-child(odd) {
+		border: 2px solid green;
+	}
 	.post {
 		max-inline-size: var(--size-content-3);
 	}
+
 	.banner {
-		background-image: url('/blogMainBanner.svg');
+		background-image: var(--blogbanner);
 		padding-block: 6.5rem;
 		margin-top: var(--size-7);
 	}
@@ -49,11 +53,14 @@
 	.description {
 		margin-top: var(--size-4);
 	}
-	.seperator {
+	.line {
 		margin-top: var(--size-2);
+		border-top: 4px solid var(--text-3);
+
+		width: 50%;
 	}
 	.title,
-	.seperator,
+	.line,
 	.description,
 	.date {
 		color: var(--text-3);
@@ -81,7 +88,7 @@
 			margin: 0 8px;
 		}
 		.title,
-		.seperator,
+		.line,
 		.description,
 		.date {
 			max-width: 15ch;

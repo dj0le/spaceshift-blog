@@ -8,22 +8,6 @@ html {
 	--font-heading: 'Space Grotesk', sans-serif;
 	--font-mono: 'JetBrains Mono', monospace;
 
-	--bg-grad-dark: linear-gradient(
-		145deg,
-		hsl(216deg 16% 25%) 0%,
-		hsl(209deg 38% 11%) 50%,
-		hsl(208deg 33% 10%) 80%,
-		hsl(208deg 31% 10%) 90%
-	);
-	--bg-grad-light: linear-gradient(
-		145deg,
-		hsl(174deg 31% 94%) 0%,
-		hsl(180deg 17% 88%) 15%,
-		hsl(0deg 0% 100%) 50%,
-		hsl(180deg 17% 90%) 70%,
-		hsl(174deg 31% 94%) 100%
-	);
-
 	/* dark */
 	--brand-dark: var(--sand-3);
 	--text-1-dark: var(--gray-3);
@@ -37,7 +21,24 @@ html {
 	--background-2-dark: var(--bg-grad-dark);
 	--border-dark: var(--gray-9);
 	--link-dark: var(--cyan-3);
-	--grad-text-dark: linear-gradient(165deg, hsl(189deg 69% 70%) 30%, hsl(189deg 69% 30%) 70%);
+	--blogbanner-dark: url('/blogbannerdark.svg');
+	--postbg-dark: url('/postbgdark.svg');
+	--gradtext-1-dark: linear-gradient(165deg, hsl(189deg 69% 70%) 30%, hsl(189deg 69% 30%) 70%);
+	--gradtext-2-dark: linear-gradient(160deg, hsl(200deg 99% 76%) 25%, hsl(200deg 99% 30%) 70%);
+	--gradient-dark: linear-gradient(
+		145deg,
+		hsl(216deg 16% 25%) 0%,
+		hsl(209deg 38% 11%) 50%,
+		hsl(208deg 33% 10%) 80%,
+		hsl(208deg 31% 10%) 90%
+	);
+	--gradient-2-dark: linear-gradient(
+		145deg,
+		hsl(200deg 99% 66%) 0%,
+		hsl(200deg 44% 49%) 50%,
+		hsl(200deg 37% 38%) 80%,
+		hsl(200deg 31% 28%) 90%
+	);
 
 	/* light */
 	--brand-light: var(--sand-10);
@@ -52,7 +53,17 @@ html {
 	--background-2-light: var(--bg-grad-light);
 	--border-light: var(--gray-4);
 	--link-light: var(--cyan-10);
-	--grad-text-light: linear-gradient(165deg, hsl(189deg 69% 50%) 30%, hsl(189deg 69% 25%) 80%);
+	--blogbanner-light: url('/blogbannerlight.svg');
+	--postbg-light: url('/postbglight.svg');
+	--gradtext-1-light: linear-gradient(165deg, hsl(189deg 69% 50%) 30%, hsl(189deg 69% 25%) 80%);
+	--gradient-light: linear-gradient(
+		145deg,
+		hsl(174deg 31% 94%) 0%,
+		hsl(180deg 17% 88%) 15%,
+		hsl(0deg 0% 100%) 50%,
+		hsl(180deg 17% 90%) 70%,
+		hsl(174deg 31% 94%) 100%
+	);
 }
 
 :root {
@@ -67,10 +78,12 @@ html {
 	--surface-3: var(--surface-3-dark);
 	--surface-4: var(--surface-4-dark);
 	--background: var(--background-dark);
-	--background-2: var(--bg-grad-dark);
+	--background-2: var(--gradient-dark);
 	--border: var(--border-dark);
 	--link: var(--link-dark);
-	--grad-text: var(--grad-text-dark);
+	--blogbanner: var(--blogbanner-dark);
+	--postbg: url('/postbgdark.svg');
+	--grad-text: var(--gradtext-2-dark);
 }
 
 @media (prefers-color-scheme: light) {
@@ -86,10 +99,12 @@ html {
 		--surface-3: var(--surface-3-light);
 		--surface-4: var(--surface-4-light);
 		--background: var(--background-light);
-		--background-2: var(--bg-grad-light);
+		--background-2: var(--gradient-light);
 		--border: var(--border-light);
 		--link: var(--link-light);
-		--grad-text: var(--grad-text-light);
+		--blogbanner: var(--blogbanner-light);
+		--postbg: url('/postbglight.svg');
+		--grad-text: var(--gradtext-1-light);
 	}
 }
 
@@ -105,10 +120,12 @@ html {
 	--surface-3: var(--surface-3-dark);
 	--surface-4: var(--surface-4-dark);
 	--background: var(--background-dark);
-	--background-2: var(--bg-grad-dark);
+	--background-2: var(--gradient-dark);
 	--border: var(--border-dark);
 	--link: var(--link-dark);
-	--grad-text: var(--grad-text-dark);
+	--blogbanner: var(--blogbanner-dark);
+	--postbg: url('/postbgdark.svg');
+	--grad-text: var(--gradtext-2-dark);
 }
 
 [color-scheme='light'] {
@@ -123,10 +140,12 @@ html {
 	--surface-3: var(--surface-3-light);
 	--surface-4: var(--surface-4-light);
 	--background: var(--background-light);
-	--background-2: var(--bg-grad-light);
+	--background-2: var(--gradient-light);
 	--border: var(--border-light);
 	--link: var(--link-light);
-	--grad-text: var(--grad-text-light);
+	--blogbanner: var(--blogbanner-light);
+	--postbg: url('/postbglight.svg');
+	--grad-text: var(--gradtext-1-light);
 }
 
 html,
