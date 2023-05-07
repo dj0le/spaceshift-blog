@@ -21,19 +21,18 @@
 			</li>
 		</ul>
 	</div>
-	<div class="column">
-		<div class="footer-nav">
-			<button> <Rss /> </button>
-			<button> <Globe /> </button>
-			<button> <Github /> </button>
-			<button> <Mail /> </button>
-		</div>
+	<div class="footer-nav">
+		<button> <Rss /> </button>
+		<button> <Globe /> </button>
+		<button> <Github /> </button>
+		<button> <Mail /> </button>
 	</div>
 </footer>
 
 <style>
 	p {
 		color: var(--text-2);
+		padding-block: var(--size-3);
 	}
 	button {
 		padding: 0;
@@ -42,33 +41,38 @@
 		border: none;
 		box-shadow: none;
 		overflow: hidden;
+		margin-right: 24px;
 	}
 	.footer-nav {
 		display: flex;
-		gap: var(--size-3);
-		margin-top: var(--size-1);
+		gap: var(--size-4);
+		padding-block: var(--size-3);
 	}
-
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
 	.title {
 		border-bottom: 1px solid var(--text-2);
+		padding-block: var(--size-1);
 	}
-
+	footer {
+		padding-block: var(--size-7);
+	}
 	@media (min-width: 768px) {
 		footer {
-			padding-block: var(--size-7);
 			border-top: 1px solid var(--border);
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			align-items: center;
 		}
-
 		a {
 			color: inherit;
 			text-decoration: none;
 		}
-
-		.column {
+		.footer-nav {
 			justify-self: end;
+			padding-block: var(--size-5);
 		}
 	}
 </style>

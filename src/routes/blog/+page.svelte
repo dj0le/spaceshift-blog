@@ -8,7 +8,7 @@
 	<title>{config.title}</title>
 </svelte:head>
 
-<h1 class="gradient-text">the blog</h1>
+<h1 class="gradient-text">blog</h1>
 <ul class="posts">
 	{#each data.posts as post}
 		<div class="banner">
@@ -69,7 +69,7 @@
 	}
 	h1 {
 		font-family: var(--font-heading);
-		font-size: clamp(2rem, 15vw, 15rem);
+		font-size: clamp(2rem, 25vw, 15rem);
 		font-weight: var(--font-weight-9);
 	}
 	.gradient-text {
@@ -77,6 +77,7 @@
 		-webkit-background-clip: text;
 		background-clip: text;
 		color: transparent;
+		text-transform: uppercase;
 	}
 
 	@media (max-width: 768px) {
@@ -86,6 +87,9 @@
 		.banner {
 			padding-block: 6.5rem;
 			margin: 0 8px;
+		}
+		h1 {
+			text-align: center;
 		}
 		.title,
 		.line,
