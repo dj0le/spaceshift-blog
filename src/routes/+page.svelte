@@ -25,9 +25,6 @@
 	<div>
 		<h2 class="gradient-text">keywords</h2>
 	</div>
-	<div>
-		<h2 class="gradient-text">the blog</h2>
-	</div>
 </main>
 
 <style>
@@ -49,5 +46,16 @@
 		-webkit-background-clip: text;
 		background-clip: text;
 		color: transparent;
+	}
+	main {
+		background-image: var(--catbg);
+		background-repeat: no-repeat;
+		background-position: bottom right;
+		background-size: 45%;
+	}
+	@media only screen and (max-width: 777px) {
+		main {
+			background-size: 55%;
+		}
 	}
 </style>

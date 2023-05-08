@@ -92,7 +92,7 @@
 		top: -1px;
 		z-index: 9;
 		padding-inline: var(--size-7);
-		padding-bottom: 1.5rem;
+		padding-bottom: 1rem;
 		background: var(--headerbg);
 		backdrop-filter: blur(2rem);
 	}

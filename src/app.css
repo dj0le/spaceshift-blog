@@ -23,6 +23,7 @@ html {
 	--link-dark: var(--cyan-3);
 	--blogbanner-dark: url('/blogbannerdark.svg');
 	--postbg-dark: url('/postbgdark.svg');
+	--catbg-dark: url('/pixelcatdark.png');
 	--headerbg-dark: hsl(208 26% 11% / 0.1);
 	--gradtext-1-dark: linear-gradient(165deg, hsl(189deg 69% 70%) 30%, hsl(189deg 69% 30%) 70%);
 	--gradtext-2-dark: linear-gradient(160deg, hsl(200deg 99% 76%) 25%, hsl(200deg 99% 30%) 70%);
@@ -56,6 +57,7 @@ html {
 	--link-light: var(--cyan-10);
 	--blogbanner-light: url('/blogbannerlight.svg');
 	--postbg-light: url('/postbglight.svg');
+	--catbg-light: url('/pixelcatlight.png');
 	--headerbg-light: hsl(174 31% 94% / 0.1);
 	--gradtext-1-light: linear-gradient(165deg, hsl(189deg 69% 50%) 30%, hsl(189deg 69% 25%) 80%);
 	--gradient-light: linear-gradient(
@@ -84,7 +86,8 @@ html {
 	--border: var(--border-dark);
 	--link: var(--link-dark);
 	--blogbanner: var(--blogbanner-dark);
-	--postbg: url('/postbgdark.svg');
+	--postbg: var(--postbg-dark);
+	--catbg: var(--catbg-dark);
 	--headerbg: var(--headerbg-dark);
 	--grad-text: var(--gradtext-2-dark);
 }
@@ -106,7 +109,8 @@ html {
 		--border: var(--border-light);
 		--link: var(--link-light);
 		--blogbanner: var(--blogbanner-light);
-		--postbg: url('/postbglight.svg');
+		--postbg: var(--postbg-light);
+		--catbg: var(--catbg-light);
 		--headerbg: var(--headerbg-light);
 		--grad-text: var(--gradtext-1-light);
 	}
@@ -128,7 +132,8 @@ html {
 	--border: var(--border-dark);
 	--link: var(--link-dark);
 	--blogbanner: var(--blogbanner-dark);
-	--postbg: url('/postbgdark.svg');
+	--postbg: var(--postbg-dark);
+	--catbg: var(--catbg-dark);
 	--headerbg: var(--headerbg-dark);
 	--grad-text: var(--gradtext-2-dark);
 }
@@ -149,7 +154,8 @@ html {
 	--border: var(--border-light);
 	--link: var(--link-light);
 	--blogbanner: var(--blogbanner-light);
-	--postbg: url('/postbglight.svg');
+	--postbg: var(--postbg-light);
+	--catbg: var(--catbg-light);
 	--headerbg: var(--headerbg-light);
 	--grad-text: var(--gradtext-1-light);
 }
