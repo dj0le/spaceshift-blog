@@ -78,23 +78,9 @@
 			<li on:click={() => (isMenuOpen = false)} on:keypress={() => (isMenuOpen = false)}>
 				<a class:current={current === 3} on:click={() => (current = 3)} href="/contact">contact</a>
 			</li>
-
-			<Toggle />
-			<!-- <div class="drop-socials">
-	  <a href="/search"
-		><iconify-icon class="icon" icon="material-symbols:search" /></a
-	  >
-	  <a href="/language"><iconify-icon icon="circle-flags:ba" /></a>
-	  <a href="/account"
-		><iconify-icon class="icon" icon="material-symbols:person" /></a
-	  >
-	  <a href="/cart"
-		><iconify-icon
-		  class="icon"
-		  icon="material-symbols:shopping-bag-outline"
-		/></a
-	  >
-	</div> -->
+			<div class="center">
+				<Toggle />
+			</div>
 		</nav>
 	</div>
 </header>
@@ -105,12 +91,18 @@
 		position: sticky;
 		top: -1px;
 		z-index: 9;
+		padding-inline: var(--size-7);
+		padding-bottom: 1.5rem;
+		background: var(--headerbg);
+		backdrop-filter: blur(2rem);
 	}
 
 	.nav-wrapper {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		margin: 0 auto;
+		max-inline-size: 1440px;
 		position: relative;
 		padding-top: 2rem;
 	}
@@ -159,13 +151,13 @@
 		position: absolute;
 		top: 100%;
 		right: 100%;
-		width: 91%;
+		width: 100%;
+		margin-top: 1rem;
 		padding-top: 2rem;
-		background-color: var(--surface-2);
-		border: 2px solid var(--surface-3);
-		border-right: none;
-		border-radius: 0.5rem 0 0 0.5rem;
-		transition: all 275ms ease-in-out;
+		background-image: var(--background-2);
+		border: 2px solid var(--brand);
+		border-radius: 0.5rem;
+		transition: all 200ms ease-in-out;
 		overflow: hidden;
 	}
 
@@ -208,6 +200,10 @@
 		}
 		.theme-switcher {
 			display: none;
+		}
+		.center {
+			padding-block: var(--size-3);
+			text-align: center;
 		}
 	}
 

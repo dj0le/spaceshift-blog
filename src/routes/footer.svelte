@@ -53,15 +53,15 @@
 		text-decoration: none;
 	}
 	.title {
-		border-bottom: 1px solid var(--text-2);
+		border-bottom: 1px solid var(--brand);
 		padding-block: var(--size-1);
 	}
 	footer {
 		padding-block: var(--size-7);
+		border-top: 1px solid var(--brand);
 	}
 	@media (min-width: 768px) {
 		footer {
-			border-top: 1px solid var(--border);
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			align-items: center;
@@ -72,7 +72,7 @@
 		}
 		.footer-nav {
 			justify-self: end;
-			padding-block: var(--size-5);
+			padding-block: var(--size-1);
 		}
 	}
 </style>

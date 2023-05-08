@@ -23,6 +23,7 @@ html {
 	--link-dark: var(--cyan-3);
 	--blogbanner-dark: url('/blogbannerdark.svg');
 	--postbg-dark: url('/postbgdark.svg');
+	--headerbg-dark: hsl(208 26% 11% / 0.1);
 	--gradtext-1-dark: linear-gradient(165deg, hsl(189deg 69% 70%) 30%, hsl(189deg 69% 30%) 70%);
 	--gradtext-2-dark: linear-gradient(160deg, hsl(200deg 99% 76%) 25%, hsl(200deg 99% 30%) 70%);
 	--gradient-dark: linear-gradient(
@@ -41,7 +42,7 @@ html {
 	);
 
 	/* light */
-	--brand-light: var(--sand-10);
+	--brand-light: var(--cyan-5);
 	--text-1-light: var(--gray-8);
 	--text-2-light: var(--gray-7);
 	--text-3-light: var(--gray-8);
@@ -49,12 +50,13 @@ html {
 	--surface-2-light: var(--gray-1);
 	--surface-3-light: var(--gray-2);
 	--surface-4-light: var(--gray-3);
-	--background-light: var(--gradient-28);
+	--background-light: var(--stone-2);
 	--background-2-light: var(--bg-grad-light);
-	--border-light: var(--gray-4);
+	--border-light: var(--stone-1);
 	--link-light: var(--cyan-10);
 	--blogbanner-light: url('/blogbannerlight.svg');
 	--postbg-light: url('/postbglight.svg');
+	--headerbg-light: hsl(174 31% 94% / 0.1);
 	--gradtext-1-light: linear-gradient(165deg, hsl(189deg 69% 50%) 30%, hsl(189deg 69% 25%) 80%);
 	--gradient-light: linear-gradient(
 		145deg,
@@ -83,6 +85,7 @@ html {
 	--link: var(--link-dark);
 	--blogbanner: var(--blogbanner-dark);
 	--postbg: url('/postbgdark.svg');
+	--headerbg: var(--headerbg-dark);
 	--grad-text: var(--gradtext-2-dark);
 }
 
@@ -104,6 +107,7 @@ html {
 		--link: var(--link-light);
 		--blogbanner: var(--blogbanner-light);
 		--postbg: url('/postbglight.svg');
+		--headerbg: var(--headerbg-light);
 		--grad-text: var(--gradtext-1-light);
 	}
 }
@@ -125,6 +129,7 @@ html {
 	--link: var(--link-dark);
 	--blogbanner: var(--blogbanner-dark);
 	--postbg: url('/postbgdark.svg');
+	--headerbg: var(--headerbg-dark);
 	--grad-text: var(--gradtext-2-dark);
 }
 
@@ -145,6 +150,7 @@ html {
 	--link: var(--link-light);
 	--blogbanner: var(--blogbanner-light);
 	--postbg: url('/postbglight.svg');
+	--headerbg: var(--headerbg-light);
 	--grad-text: var(--gradtext-1-light);
 }
 

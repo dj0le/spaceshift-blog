@@ -11,9 +11,8 @@
 	export let data
 </script>
 
+<Header />
 <div class="layout">
-	<Header />
-
 	<main>
 		<PageTransition url={data.url}>
 			<slot />
