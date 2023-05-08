@@ -6,18 +6,18 @@
 <footer>
 	<div>
 		<p><span class="title">{config.title}</span> &copy {new Date().getFullYear()}</p>
-		<ul class="footer-nav">
+		<ul class="primary-nav">
 			<li>
-				<a href="/">portfolio</a>
+				<a href="/" data-sveltekit-preload-data>portfolio</a>
 			</li>
 			<li>
-				<a href="/blog">blog</a>
+				<a href="/blog" data-sveltekit-preload-data>blog</a>
 			</li>
 			<li>
-				<a href="/resume">resume</a>
+				<a href="/resume" data-sveltekit-preload-data>resume</a>
 			</li>
 			<li>
-				<a href="/contact">contact</a>
+				<a href="/contact" data-sveltekit-preload-data>contact</a>
 			</li>
 		</ul>
 	</div>
@@ -43,6 +43,7 @@
 		overflow: hidden;
 		margin-right: 24px;
 	}
+	.primary-nav,
 	.footer-nav {
 		display: flex;
 		gap: var(--size-4);
@@ -53,7 +54,7 @@
 		text-decoration: none;
 	}
 	.title {
-		border-bottom: 1px solid var(--brand);
+		/* border-bottom: 1px solid var(--brand); */
 		padding-block: var(--size-1);
 	}
 	footer {

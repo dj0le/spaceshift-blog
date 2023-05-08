@@ -14,9 +14,6 @@
 		<div class="banner">
 			<li class="post">
 				<a href={post.slug} class="title">{post.title}</a>
-				<div class="line" />
-				<p class="date">{formatDate(post.date)}</p>
-				<p class="description">{post.description}</p>
 			</li>
 		</div>
 	{/each}
@@ -26,46 +23,20 @@
 	.posts {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		gap: var(--size-3);
 	}
-	.posts:nth-child(odd) {
-		border: 2px solid green;
-	}
-	.post {
-		max-inline-size: var(--size-content-3);
-	}
-
 	.banner {
 		background-image: var(--blogbanner);
-		padding-block: 6.5rem;
-		margin-top: var(--size-7);
+		background-size: contain;
+		padding-block: 8rem;
+		/* margin-top: var(--size-7); */
 	}
 	.title {
 		font-size: var(--font-size-fluid-1);
 		font-family: var(--font-heading);
 		font-weight: var(--font-weight-8);
 		text-transform: capitalize;
-	}
-	.date {
-		text-transform: uppercase;
-		margin-top: var(--size-3);
-	}
-	.description {
-		margin-top: var(--size-4);
-	}
-	.line {
-		margin-top: var(--size-2);
-		border-top: 4px solid var(--text-3);
-
-		width: 50%;
-	}
-	.title,
-	.line,
-	.description,
-	.date {
 		color: var(--text-3);
-		margin-left: 6rem;
-		max-width: 25ch;
+		margin-left: 4rem;
 	}
 	h1 {
 		font-family: var(--font-heading);
@@ -81,21 +52,16 @@
 	}
 
 	@media (max-width: 768px) {
+		.banner {
+			background-image: var(--postbg);
+			padding-block: 2rem;
+			margin-top: 0;
+		}
 		.posts {
 			grid-template-columns: 1fr;
 		}
-		.banner {
-			padding-block: 6.5rem;
-			margin: 0 8px;
-		}
 		h1 {
 			text-align: center;
-		}
-		.title,
-		.line,
-		.description,
-		.date {
-			max-width: 15ch;
 		}
 	}
 </style>

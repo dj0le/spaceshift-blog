@@ -5,7 +5,6 @@
 	import 'open-props/style'
 	import 'open-props/normalize'
 	import 'open-props/buttons'
-
 	import '../app.css'
 
 	export let data

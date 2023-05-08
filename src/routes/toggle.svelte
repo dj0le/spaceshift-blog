@@ -26,6 +26,7 @@
 		border: none;
 		box-shadow: none;
 		overflow: hidden;
+		transition: all 250ms ease-in-out;
 	}
 
 	button > * {

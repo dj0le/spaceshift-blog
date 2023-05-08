@@ -1,6 +1,7 @@
 <script lang="ts">
 	import * as config from '$lib/config'
 	import Toggle from './toggle.svelte'
+	import Navigation from './navigation.svelte'
 
 	let isMenuOpen = false
 
@@ -17,41 +18,9 @@
 			<img src="/favicon.ico" alt="logo" />
 			<a href="/" on:click={() => (current = 0)} class="title"><b>{config.title}</b></a>
 		</div>
-
-		<ul class="links" aria-label="main navigation">
-			<li>
-				<a
-					class:current={current === 0}
-					on:click={() => (current = 0)}
-					href="/"
-					data-sveltekit-preload-data>portfolio</a
-				>
-			</li>
-			<li>
-				<a
-					class:current={current === 1}
-					on:click={() => (current = 1)}
-					href="/blog"
-					data-sveltekit-preload-data>blog</a
-				>
-			</li>
-			<li>
-				<a
-					class:current={current === 2}
-					on:click={() => (current = 2)}
-					href="/resume"
-					data-sveltekit-preload-data>resume</a
-				>
-			</li>
-			<li>
-				<a
-					class:current={current === 4}
-					on:click={() => (current = 4)}
-					href="/contact"
-					data-sveltekit-preload-data>contact</a
-				>
-			</li>
-		</ul>
+		<div class="theme-switcher">
+			<Navigation />
+		</div>
 		<div class="theme-switcher">
 			<Toggle />
 		</div>
@@ -66,19 +35,12 @@
 
 	<div>
 		<nav class="drop-menu" class:open={isMenuOpen}>
-			<li on:click={() => (isMenuOpen = false)} on:keypress={() => (isMenuOpen = false)}>
-				<a class:current={current === 0} on:click={() => (current = 0)} href="/">portfolio</a>
-			</li>
-			<li on:click={() => (isMenuOpen = false)} on:keypress={() => (isMenuOpen = false)}>
-				<a class:current={current === 1} on:click={() => (current = 1)} href="/blog">blog</a>
-			</li>
-			<li on:click={() => (isMenuOpen = false)} on:keypress={() => (isMenuOpen = false)}>
-				<a class:current={current === 2} on:click={() => (current = 2)} href="/resume">resume</a>
-			</li>
-			<li on:click={() => (isMenuOpen = false)} on:keypress={() => (isMenuOpen = false)}>
-				<a class:current={current === 3} on:click={() => (current = 3)} href="/contact">contact</a>
-			</li>
-			<div class="center">
+			<div
+				class="center"
+				on:click={() => (isMenuOpen = false)}
+				on:keypress={() => (isMenuOpen = false)}
+			>
+				<Navigation />
 				<Toggle />
 			</div>
 		</nav>
@@ -87,16 +49,12 @@
 
 <style>
 	.primary-header {
-		position: relative;
-		position: sticky;
-		top: -1px;
-		z-index: 9;
 		padding-inline: var(--size-7);
 		padding-bottom: 1rem;
-		background: var(--headerbg);
-		backdrop-filter: blur(2rem);
+		position: relative;
+		top: -1px;
+		z-index: 9;
 	}
-
 	.nav-wrapper {
 		display: flex;
 		justify-content: space-between;
@@ -106,13 +64,8 @@
 		position: relative;
 		padding-top: 2rem;
 	}
-
 	nav {
 		padding-block: var(--size-7);
-	}
-
-	.links {
-		margin-block: var(--size-7);
 	}
 
 	a {
@@ -125,9 +78,6 @@
 		gap: 16px;
 		align-items: center;
 	}
-	.current {
-		position: relative;
-	}
 	button {
 		padding: 0;
 		font-weight: inherit;
@@ -136,38 +86,21 @@
 		box-shadow: none;
 		overflow: hidden;
 	}
-	.current::after {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		height: 2px;
-		background-color: var(--brand);
-	}
 	.drop-menu {
 		display: none;
 		opacity: 0;
 		position: absolute;
 		top: 100%;
-		right: 100%;
-		width: 100%;
-		margin-top: 1rem;
-		padding-top: 2rem;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 85%;
+		padding-block: var(--size-3);
 		background-image: var(--background-2);
-		border: 2px solid var(--brand);
+		border: 3px solid var(--brand);
 		border-radius: 0.5rem;
 		transition: all 200ms ease-in-out;
 		overflow: hidden;
-	}
-
-	.drop-menu li {
-		font-size: 1.5rem;
-		list-style: none;
-		padding: 1rem;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 	}
 
 	nav.open {
@@ -180,11 +113,10 @@
 			display: flex;
 			justify-content: space-between;
 		}
-
-		.links {
-			display: flex;
-			gap: var(--size-7);
-			margin-block: 0;
+		.primary-header {
+			position: sticky;
+			background: var(--headerbg);
+			backdrop-filter: blur(2rem);
 		}
 		.hide-burger {
 			display: none;
@@ -194,9 +126,6 @@
 	@media only screen and (max-width: 767px) {
 		.drop-menu {
 			display: block;
-		}
-		.links {
-			display: none;
 		}
 		.theme-switcher {
 			display: none;
@@ -208,15 +137,6 @@
 	}
 
 	/* navlink animations */
-
-	li > a {
-		display: inline-block;
-		transition: all 150ms ease-in-out;
-	}
-
-	li > a:hover {
-		transform: scale(1.1);
-	}
 
 	.burger {
 		height: 2rem;
