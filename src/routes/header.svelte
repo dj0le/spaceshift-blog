@@ -18,10 +18,10 @@
 			<img src="/favicon.ico" alt="logo" />
 			<a href="/" on:click={() => (current = 0)} class="title"><b>{config.title}</b></a>
 		</div>
-		<div class="theme-switcher">
+		<div class="hide-component">
 			<Navigation />
 		</div>
-		<div class="theme-switcher">
+		<div class="hide-component">
 			<Toggle />
 		</div>
 		<div class="hide-burger">
@@ -91,8 +91,8 @@
 		opacity: 0;
 		position: absolute;
 		top: 100%;
-		left: 0;
 		right: 0;
+		left: 150%;
 		margin: auto;
 		width: 85%;
 		padding-block: var(--size-3);
@@ -105,7 +105,7 @@
 
 	nav.open {
 		opacity: 1;
-		right: 0;
+		left: 0;
 	}
 
 	@media (min-width: 768px) {
@@ -127,7 +127,7 @@
 		.drop-menu {
 			display: block;
 		}
-		.theme-switcher {
+		.hide-component {
 			display: none;
 		}
 		.center {
