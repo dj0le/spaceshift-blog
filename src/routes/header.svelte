@@ -62,7 +62,7 @@
 		margin: 0 auto;
 		max-inline-size: 1440px;
 		position: relative;
-		padding-top: 2rem;
+		padding-top: 1rem;
 	}
 	nav {
 		padding-block: var(--size-7);
@@ -141,7 +141,7 @@
 	.burger {
 		height: 2rem;
 		aspect-ratio: 1;
-		border: 2px solid var(--text-1);
+		border: 2px solid var(--brand);
 		border-radius: 0.25rem;
 		background-color: transparent;
 		display: flex;
@@ -153,9 +153,9 @@
 	.burger > div {
 		height: 2px;
 		width: 1rem;
-		background-color: var(--text-1);
+		background-color: var(--brand);
 		position: absolute;
-		transition: all 125ms ease-out;
+		transition: all 175ms ease-out;
 	}
 
 	.bar-1 {
