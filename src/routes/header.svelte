@@ -91,10 +91,9 @@
 		opacity: 0;
 		position: absolute;
 		top: 100%;
-		right: 0;
-		left: 150%;
+		left: 0;
 		margin: auto;
-		width: 85%;
+		width: 0;
 		padding-block: var(--size-3);
 		background-image: var(--background-2);
 		border: 3px solid var(--brand);
@@ -105,7 +104,8 @@
 
 	nav.open {
 		opacity: 1;
-		left: 0;
+		right: 0;
+		width: 85%;
 	}
 
 	@media (min-width: 768px) {
