@@ -45,7 +45,7 @@
 	}
 
 	.banner {
-		background-image: var(--postbg);
+		background-image: var(--banner);
 		padding-block: 2.75rem;
 	}
 

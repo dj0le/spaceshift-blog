@@ -13,6 +13,7 @@
 	{#each data.posts as post}
 		<div class="banner">
 			<li class="post">
+				<p>{post.number}</p>
 				<a href={post.slug} class="title">{post.title}</a>
 			</li>
 		</div>
@@ -20,15 +21,14 @@
 </ul>
 
 <style>
-	.posts {
+	.post {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 10% 1fr;
 	}
 	.banner {
-		background-image: var(--blogbanner);
+		background-image: var(--banner);
 		background-size: contain;
-		padding-block: 8rem;
-		/* margin-top: var(--size-7); */
+		padding-block: 4rem;
 	}
 	.title {
 		font-size: var(--font-size-fluid-1);
@@ -37,6 +37,13 @@
 		text-transform: capitalize;
 		color: var(--text-3);
 		margin-left: 4rem;
+	}
+	p {
+		font-size: var(--font-size-fluid-1);
+		font-family: var(--font-heading);
+		font-weight: var(--font-weight-8);
+		color: var(--text-3);
+		margin-left: 2.5rem;
 	}
 	h1 {
 		font-family: var(--font-heading);
@@ -53,15 +60,20 @@
 
 	@media (max-width: 768px) {
 		.banner {
-			background-image: var(--postbg);
-			padding-block: 2rem;
-			margin-top: 0;
+			background-image: var(--banner);
+			padding-block: 3.5rem;
 		}
-		.posts {
-			grid-template-columns: 1fr;
+		.post {
+			grid-template-columns: 20% 1fr;
 		}
 		h1 {
 			text-align: center;
+		}
+		p {
+			margin-left: 2.25rem;
+		}
+		.title {
+			margin-left: 1rem;
 		}
 	}
 </style>

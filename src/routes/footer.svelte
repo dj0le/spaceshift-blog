@@ -59,6 +59,7 @@
 	}
 	footer {
 		padding-block: var(--size-7);
+		padding-inline: var(--size-7);
 		border-top: 1px solid var(--brand);
 	}
 	@media (min-width: 768px) {

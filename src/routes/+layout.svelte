@@ -10,14 +10,13 @@
 	export let data
 </script>
 
-<Header />
 <div class="layout">
+	<Header />
 	<main>
 		<PageTransition url={data.url}>
 			<slot />
 		</PageTransition>
 	</main>
-
 	<Footer />
 </div>
 
@@ -28,11 +27,11 @@
 		display: grid;
 		grid-template-rows: auto 1fr auto;
 		margin-inline: auto;
-		padding-inline: var(--size-7);
 	}
 
 	main {
 		padding-block: var(--size-3);
+		padding-inline: var(--size-7);
 	}
 
 	@media (min-width: 1440px) {

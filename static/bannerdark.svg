@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="436"
-   height="350"
-   viewBox="0 0 436 350"
+   width="400"
+   height="154"
+   viewBox="0 0 400 154"
    fill="none"
    version="1.1"
    id="svg22"
-   sodipodi:docname="blogbgmain.svg"
+   sodipodi:docname="bannerdark.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
   <metadata
      id="metadata26">
@@ -36,46 +36,47 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1745"
-     inkscape:window-height="1209"
+     inkscape:window-width="1278"
+     inkscape:window-height="1360"
      id="namedview24"
      showgrid="false"
-     inkscape:zoom="1.1949541"
-     inkscape:cx="324.82418"
-     inkscape:cy="216.99942"
-     inkscape:window-x="0"
+     inkscape:zoom="1.3025"
+     inkscape:cx="217.6805"
+     inkscape:cy="130.25504"
+     inkscape:window-x="-7"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg22" />
   <path
-     d="m 61,68 h 367 c 4.418,0 8,3.5817 8,8 v 210 c 0,4.418 -3.582,8 -8,8 H 69 c -4.4183,0 -8,-3.582 -8,-8 z"
-     fill="url(#paint0_linear_344_53)"
+     d="M 80.5,44.5 H 392 c 4.142,0 7.5,3.3579 7.5,7.5 v 59 c 0,4.1421 -3.358,7.5 -7.5,7.5 H 88 c -4.1421,0 -7.5,-3.3579 -7.5,-7.5 z"
+     fill="url(#paint0_linear_359_24)"
+     stroke="#183849"
      id="path2"
-     style="fill:url(#paint0_linear_344_53)" />
+     style="fill:url(#paint0_linear_359_24)" />
   <path
-     d="M 93,294 75.5,316 74,294 Z"
+     d="M 124,118.5 100.5,134 97,118.5 Z"
      fill="#183849"
      id="path4" />
   <path
-     d="M 60.842,68 H 93 L 58,18 Z"
+     d="m 82,44.5 h 42 L 78,20 Z"
      fill="#183849"
      id="path6" />
   <path
-     d="M 12.4769,320.465 74.9728,316.014 58.0446,18.797199 0.51358,48.4471 Z"
-     fill="url(#paint1_linear_344_53)"
+     d="M 99.8917,133.5 77.6006,20.558342 1.0715,30.8703 16.8232,133.5 Z"
+     fill="url(#paint1_linear_359_24)"
      stroke="#183849"
      id="path8"
-     style="fill:url(#paint1_linear_344_53);filter:url(#filter74)" />
+     style="fill:url(#paint1_linear_359_24);filter:url(#filter38)" />
   <defs
      id="defs20">
     <linearGradient
-       id="paint0_linear_344_53"
-       x1="79.5"
-       y1="130"
-       x2="397"
-       y2="87"
+       id="paint0_linear_359_24"
+       x1="95.786697"
+       y1="50.548698"
+       x2="341.84799"
+       y2="-35.141998"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(0,18)">
+       gradientTransform="translate(0,20)">
       <stop
          stop-color="#76D1FF"
          id="stop10" />
@@ -85,54 +86,55 @@
          id="stop12" />
     </linearGradient>
     <linearGradient
-       id="paint1_linear_344_53"
-       x1="4"
-       y1="82.9105"
-       x2="130.86301"
-       y2="123.82"
+       id="paint1_linear_359_24"
+       x1="4.49997"
+       y1="14"
+       x2="85.2547"
+       y2="122.416"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(0,18)">
+       gradientTransform="translate(0,20)">
       <stop
+         offset="0.230903"
          stop-color="#6ECEFF"
          id="stop15" />
       <stop
-         offset="0.817077"
-         stop-color="#54C5FE"
+         offset="1"
+         stop-color="#34BAFE"
          id="stop17" />
     </linearGradient>
     <filter
        style="color-interpolation-filters:sRGB"
        inkscape:label="Drop Shadow"
-       id="filter74"
-       width="1.8"
+       id="filter38"
+       width="1.5"
        height="1.5">
       <feFlood
          flood-opacity="0.498039"
          flood-color="rgb(24,56,73)"
          result="flood"
-         id="feFlood64" />
+         id="feFlood28" />
       <feComposite
          in="flood"
          in2="SourceGraphic"
          operator="in"
          result="composite1"
-         id="feComposite66" />
+         id="feComposite30" />
       <feGaussianBlur
          in="composite1"
-         stdDeviation="6"
+         stdDeviation="4"
          result="blur"
-         id="feGaussianBlur68" />
+         id="feGaussianBlur32" />
       <feOffset
          dx="8"
          dy="4"
          result="offset"
-         id="feOffset70" />
+         id="feOffset34" />
       <feComposite
          in="SourceGraphic"
          in2="offset"
          operator="over"
          result="composite2"
-         id="feComposite72" />
+         id="feComposite36" />
     </filter>
   </defs>
 </svg>

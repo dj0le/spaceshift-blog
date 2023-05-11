@@ -21,8 +21,7 @@ html {
 	--background-2-dark: var(--bg-grad-dark);
 	--border-dark: var(--gray-9);
 	--link-dark: var(--cyan-3);
-	--blogbanner-dark: url('/blogbannerdark.svg');
-	--postbg-dark: url('/postbgdark.svg');
+	--banner-dark: url('/bannerdark.svg');
 	--catbg-dark: url('/pixelcatdark.png');
 	--headerbg-dark: hsl(208 26% 11% / 0.1);
 	--gradtext-1-dark: linear-gradient(165deg, hsl(189deg 69% 70%) 30%, hsl(189deg 69% 30%) 70%);
@@ -55,8 +54,7 @@ html {
 	--background-2-light: var(--bg-grad-light);
 	--border-light: var(--stone-1);
 	--link-light: var(--cyan-10);
-	--blogbanner-light: url('/blogbannerlight.svg');
-	--postbg-light: url('/postbglight.svg');
+	--banner-light: url('/bannerlight.svg');
 	--catbg-light: url('/pixelcatlight.png');
 	--headerbg-light: hsl(174 31% 94% / 0.1);
 	--gradtext-1-light: linear-gradient(165deg, hsl(189deg 69% 50%) 30%, hsl(189deg 69% 25%) 80%);
@@ -85,8 +83,7 @@ html {
 	--background-2: var(--gradient-dark);
 	--border: var(--border-dark);
 	--link: var(--link-dark);
-	--blogbanner: var(--blogbanner-dark);
-	--postbg: var(--postbg-dark);
+	--banner: var(--banner-dark);
 	--catbg: var(--catbg-dark);
 	--headerbg: var(--headerbg-dark);
 	--grad-text: var(--gradtext-2-dark);
@@ -108,8 +105,7 @@ html {
 		--background-2: var(--gradient-light);
 		--border: var(--border-light);
 		--link: var(--link-light);
-		--blogbanner: var(--blogbanner-light);
-		--postbg: var(--postbg-light);
+		--banner: var(--banner-light);
 		--catbg: var(--catbg-light);
 		--headerbg: var(--headerbg-light);
 		--grad-text: var(--gradtext-1-light);
@@ -131,8 +127,7 @@ html {
 	--background-2: var(--gradient-dark);
 	--border: var(--border-dark);
 	--link: var(--link-dark);
-	--blogbanner: var(--blogbanner-dark);
-	--postbg: var(--postbg-dark);
+	--banner: var(--banner-dark);
 	--catbg: var(--catbg-dark);
 	--headerbg: var(--headerbg-dark);
 	--grad-text: var(--gradtext-2-dark);
@@ -153,8 +148,7 @@ html {
 	--background-2: var(--gradient-light);
 	--border: var(--border-light);
 	--link: var(--link-light);
-	--blogbanner: var(--blogbanner-light);
-	--postbg: var(--postbg-light);
+	--banner: var(--banner-light);
 	--catbg: var(--catbg-light);
 	--headerbg: var(--headerbg-light);
 	--grad-text: var(--gradtext-1-light);
