@@ -1,5 +1,6 @@
 <script lang="ts">
 	import * as config from '$lib/config'
+	import Accordion from './Accordion.svelte'
 </script>
 
 <svelte:head>
@@ -14,16 +15,7 @@
 		<p>this page is a work in progress, expect things to be broken, like really broken</p>
 	</div>
 	<div>
-		<h2 class="gradient-text">projects</h2>
-	</div>
-	<div>
-		<h2 class="gradient-text">designs</h2>
-	</div>
-	<div>
-		<h2 class="gradient-text">tools</h2>
-	</div>
-	<div>
-		<h2 class="gradient-text">keywords</h2>
+		<Accordion />
 	</div>
 </main>
 
@@ -35,11 +27,6 @@
 		font-family: var(--font-heading);
 		font-size: clamp(2rem, 15vw, 15rem);
 		font-weight: var(--font-weight-9);
-	}
-	h2 {
-		font-family: var(--font-heading);
-		font-size: clamp(2rem, 10vw, 10rem);
-		font-weight: var(--font-weight-8);
 	}
 	.gradient-text {
 		background: var(--grad-text);

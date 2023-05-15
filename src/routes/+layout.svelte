@@ -4,7 +4,6 @@
 	import Footer from './footer.svelte'
 	import 'open-props/style'
 	import 'open-props/normalize'
-	import 'open-props/buttons'
 	import '../app.css'
 
 	export let data
@@ -37,6 +36,11 @@
 	@media (min-width: 1440px) {
 		.layout {
 			padding-inline: 0;
+		}
+	}
+	@media only screen and (max-width: 767px) {
+		main {
+			padding-block: var(--size-3);
 		}
 	}
 </style>

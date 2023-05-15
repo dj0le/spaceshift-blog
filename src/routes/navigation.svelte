@@ -1,10 +1,4 @@
 <script lang="ts">
-	let isMenuOpen = false
-
-	function toggleMenu() {
-		isMenuOpen = !isMenuOpen
-	}
-
 	let current = 0
 </script>
 

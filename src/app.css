@@ -205,6 +205,15 @@ li {
 	font-size: var(--size-6);
 }
 
+button {
+	padding: 0;
+	font-weight: inherit;
+	background: none;
+	border: none;
+	box-shadow: none;
+	overflow: hidden;
+}
+
 .prose :is(h2, h3, h4, h5, h6) {
 	margin-top: var(--size-8);
 	margin-bottom: var(--size-3);

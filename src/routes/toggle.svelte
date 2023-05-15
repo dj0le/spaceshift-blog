@@ -20,12 +20,6 @@
 
 <style>
 	button {
-		padding: 0;
-		font-weight: inherit;
-		background: none;
-		border: none;
-		box-shadow: none;
-		overflow: hidden;
 		transition: all 250ms ease-in-out;
 	}
 

@@ -34,15 +34,7 @@
 		color: var(--text-2);
 		padding-block: var(--size-3);
 	}
-	button {
-		padding: 0;
-		font-weight: inherit;
-		background: none;
-		border: none;
-		box-shadow: none;
-		overflow: hidden;
-		margin-right: 24px;
-	}
+
 	.primary-nav,
 	.footer-nav {
 		display: flex;
@@ -61,6 +53,9 @@
 		padding-block: var(--size-7);
 		padding-inline: var(--size-7);
 		border-top: 1px solid var(--brand);
+	}
+	button {
+		margin-right: 24px;
 	}
 	@media (min-width: 768px) {
 		footer {

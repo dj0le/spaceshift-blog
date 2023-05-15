@@ -78,14 +78,7 @@
 		gap: 16px;
 		align-items: center;
 	}
-	button {
-		padding: 0;
-		font-weight: inherit;
-		background: none;
-		border: none;
-		box-shadow: none;
-		overflow: hidden;
-	}
+
 	.drop-menu {
 		display: none;
 		opacity: 0;
