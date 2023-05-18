@@ -11,23 +11,24 @@
 
 <div class="layout">
 	<Header />
-	<main>
+	<main class="container">
 		<PageTransition url={data.url}>
 			<slot />
 		</PageTransition>
 	</main>
-	<Footer />
+	<div class="containter">
+		<Footer />
+	</div>
 </div>
 
 <style>
 	.layout {
 		height: 100%;
-		max-inline-size: 1440px;
 		display: grid;
 		grid-template-rows: auto 1fr auto;
+		max-inline-size: 1440px;
 		margin-inline: auto;
 	}
-
 	main {
 		padding-block: var(--size-3);
 		padding-inline: var(--size-7);

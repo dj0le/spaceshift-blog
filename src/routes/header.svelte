@@ -110,6 +110,7 @@
 			position: sticky;
 			background: var(--headerbg);
 			backdrop-filter: blur(2rem);
+			border-radius: 0 0 16px 16px;
 		}
 		.hide-burger {
 			display: none;

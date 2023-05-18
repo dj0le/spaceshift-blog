@@ -53,8 +53,9 @@
 
 	button.accordion:hover,
 	button.accordion:active {
-		background-color: rgba(43, 50, 59, 0.25);
-		border-radius: 16px;
+		/* background-color: rgba(43, 50, 59, 0.25); */
+		background-image: var(--background-2);
+		border-radius: 4px 16px 16px 4px;
 	}
 
 	button.accordion:hover span.icon,
