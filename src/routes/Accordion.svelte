@@ -1,12 +1,12 @@
 <script lang="ts">
 	import Projects from '$lib/components/projects.svelte'
-	import Designs from '$lib/components/designs.svelte'
+	import About from '$lib/components/about.svelte'
 	import Tools from '$lib/components/tools.svelte'
 	import Keywords from '$lib/components/keywords.svelte'
 
 	const options = [
 		{ label: 'projects', component: Projects },
-		{ label: 'designs', component: Designs },
+		{ label: 'about', component: About },
 		{ label: 'tools', component: Tools },
 		{ label: 'keywords', component: Keywords }
 	]
@@ -53,7 +53,6 @@
 
 	button.accordion:hover,
 	button.accordion:active {
-		/* background-color: rgba(43, 50, 59, 0.25); */
 		background-image: var(--background-2);
 		border-radius: 4px 16px 16px 4px;
 	}

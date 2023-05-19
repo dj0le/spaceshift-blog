@@ -2,31 +2,34 @@
 	const tools = [
 		{
 			label: 'primary',
-			contents: [{ name: 'HTML' }, { name: 'CSS' }, { name: 'JS' }]
+			contents: [{ name: 'HTML' }, { name: 'CSS' }, { name: 'JavaScript' }]
 		},
 		{
-			label: 'secondary',
+			label: 'technical',
 			contents: [
 				{ name: 'Svelte' },
 				{ name: 'Sveltekit' },
-				{ name: 'Figma' },
-				{ name: 'Svelte' },
-				{ name: 'Sveltekit' },
-				{ name: 'Figma' }
+				{ name: 'VS Code' },
+				{ name: 'Github' },
+				{ name: 'Databases' },
+				{ name: 'Wordpress' },
+				{ name: 'Typescript' }
 			]
 		},
 		{
-			label: 'tertiary',
-			contents: [{ name: 'WSL' }, { name: 'CLI' }, { name: 'Code' }]
+			label: 'creative',
+			contents: [
+				{ name: 'Figma' },
+				{ name: 'Photoshop' },
+				{ name: 'Illustrator' },
+				{ name: 'Inkscape' },
+				{ name: 'After Effects' }
+			]
 		}
 	]
 </script>
 
-<p class="subtitle">more than words</p>
-
-<h2>Core competencies</h2>
-
-<h2>Software</h2>
+<h2>Check out my daily drivers</h2>
 
 {#each tools as tool}
 	<div><h3>{tool.label}</h3></div>
@@ -60,5 +63,14 @@
 		text-transform: capitalize;
 		color: var(--brand);
 		font-weight: 800;
+	}
+	@media only screen and (max-width: 767px) {
+		.cards {
+			grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+			max-width: 100%;
+		}
+		h2 {
+			font-size: var(--font-size-4);
+		}
 	}
 </style>
