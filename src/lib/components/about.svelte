@@ -1,8 +1,8 @@
 <h2>Do you like websites?</h2>
 <p>
-	I specialize in engaging UI/UX design, front-end development, and copywriting. I really enjoy
-	design and CSS, and making websites come to life. I believe the web should be accessible and
-	inclusive for all, and develop digital experiences around that concept.
+	I specialize in engaging UI/UX design, front-end development, and copywriting. I enjoy breathing
+	life into websites through design and CSS. I develop digital experiences around the concept that
+	the web should be accessible and inclusive for all.
 </p>
 <p>
 	I primarily code HTML, CSS & JS using Sveltekit, but am capable of using other frameworks. I also
