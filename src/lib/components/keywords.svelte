@@ -5,33 +5,35 @@
 <h3>Potential humans:</h3>
 <p>I have a well rounded skill set covering a wide range of areas</p>
 
-<div class="wall">
-	<div class="side-one">
-		<p class="highlight">| Technical Software |</p>
-		<p>
-			Cloudflare, CLI, WSL, Vercel, MDsvex, Google Pagespeed Insights, Redis, Postgres, SQL, Putty,
-			Node, Vite
-		</p>
-		<p class="highlight">| Creative Software |</p>
-		<p>
-			Scrivener, Penpot, GSAP, Rive, Tailwind, DaisyUI, SkeletonUI, Open-Props, FFMPEG, Resolume
-			Arena, StableLM, StableStudio
-		</p>
-		<p class="highlight">| Hardware |</p>
-		<p>Windows, Linux, Server, VPS, Cloud, Docker, Virtual Environments</p>
-	</div>
-	<div class="side-two">
-		<p class="highlight">| Front End |</p>
-		<p>
-			Semantic HTML, Vanilla CSS, SEO, Ally, WCAG, SPA, Ecommerce, UI/UX, Accessibility, Frameworks,
-			Algorithms
-		</p>
-		<p class="highlight">| Soft Skills |</p>
-		<p>
-			Marketing & PR, Quick learner, Creativity, Highly motivated, Expert troubleshooter, Solution
-			oriented, Relaxed but hard working, Attitude compatible with individual or team projects,
-			Project Management and large scale project experience, IT proficiency
-		</p>
+<div class="reflection">
+	<div class="wall">
+		<div class="side-one">
+			<p class="highlight">| Technical Software |</p>
+			<p>
+				Cloudflare, CLI, WSL, Vercel, MDsvex, Google Pagespeed Insights, Redis, Postgres, SQL,
+				Putty, Node, Vite
+			</p>
+			<p class="highlight">| Creative Software |</p>
+			<p>
+				Scrivener, Penpot, GSAP, Rive, Tailwind, DaisyUI, SkeletonUI, Open-Props, FFMPEG, Resolume
+				Arena, StableLM, StableStudio
+			</p>
+			<p class="highlight">| Hardware |</p>
+			<p>Windows, Linux, Server, VPS, Cloud, Docker, Virtual Environments</p>
+		</div>
+		<div class="side-two">
+			<p class="highlight">| Front End |</p>
+			<p>
+				Semantic HTML, Vanilla CSS, SEO, Ally, WCAG, SPA, Ecommerce, UI/UX, Accessibility,
+				Frameworks, Algorithms
+			</p>
+			<p class="highlight">| Soft Skills |</p>
+			<p>
+				Marketing & PR, Quick learner, Creativity, Highly motivated, Expert troubleshooter, Solution
+				oriented, Relaxed but hard working, Attitude compatible with individual or team projects,
+				Project Management and large scale project experience, IT proficiency
+			</p>
+		</div>
 	</div>
 </div>
 
@@ -46,8 +48,7 @@
 		max-width: 65%;
 		padding-block: 3rem;
 		margin-block: 2rem;
-
-		perspective: 400px;
+		perspective: 25em;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
@@ -85,25 +86,17 @@
 	}
 	@media only screen and (max-width: 767px) {
 		.wall {
-			max-width: 80%;
-			padding-block: 3rem;
-			margin-block: 2rem;
-
-			perspective: 230px;
-			display: grid;
+			max-width: 100%;
+			perspective: 35em;
 			grid-template-columns: 1fr 1fr;
 		}
 		.side-one {
-			padding: 1rem;
+			padding: 8px;
 			transform: rotateY(-5deg);
-			border: 2px solid var(--brand);
-			border-radius: 4px;
 		}
 		.side-two {
-			padding: 1rem;
+			padding: 8px;
 			transform: rotateY(5deg);
-			border: 2px solid var(--brand);
-			border-radius: 4px;
 		}
 		.highlight {
 			font-size: var(--font-size-3);
@@ -111,12 +104,8 @@
 		p {
 			font-size: var(--font-size-2);
 		}
-		h2,
 		h3 {
-			margin-block: var(--size-3);
-		}
-		h3 {
-			font-size: var(--size-4);
+			font-size: var(--size-3);
 		}
 	}
 </style>
