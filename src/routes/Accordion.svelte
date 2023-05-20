@@ -10,9 +10,7 @@
 		{ label: 'tools', component: Tools },
 		{ label: 'keywords', component: Keywords }
 	]
-
 	let isOpen = false
-
 	function toggleAccord() {
 		isOpen = !isOpen
 	}
