@@ -23,8 +23,8 @@
 		<a
 			class:current={current === 2}
 			on:click={() => (current = 2)}
-			href="/resume"
-			data-sveltekit-preload-data>resume</a
+			href="/experiments"
+			data-sveltekit-preload-data>experiments</a
 		>
 	</li>
 	<li>

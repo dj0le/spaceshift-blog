@@ -1,11 +1,11 @@
+<script lang="ts">
+</script>
+
 <h1 class="gradient-text">Contact</h1>
 <p class="subtitle">The bureau for passing information between ourselves</p>
-<div class="wrapper">
-	<div class="inner">Expandable content</div>
-	<div>
-		<p>email:</p>
-		<p>wonderbot@space-shift.com</p>
-	</div>
+<div>
+	<p>email:</p>
+	<p>wonderbot@space-shift.com</p>
 </div>
 
 <img class="stroke" src="/plus-square.svg" alt="aperture logo" />
@@ -32,21 +32,5 @@
 		background-clip: text;
 		color: transparent;
 		text-transform: uppercase;
-	}
-	.wrapper {
-		display: grid;
-		grid-template-rows: 0fr;
-		transition: grid-template-rows 0.5s ease-out;
-	}
-
-	.wrapper :hover {
-		grid-template-rows: 1fr;
-	}
-
-	.inner {
-		overflow: hidden;
-		/* background-image: url('/scanlines.png');
-		background-size: cover;
-		background-repeat: no-repeat; */
 	}
 </style>

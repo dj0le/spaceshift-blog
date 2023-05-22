@@ -11,14 +11,15 @@
 		{ label: 'keywords', component: Keywords }
 	]
 	let isOpen = false
-	function toggleAccord() {
+	function toggle() {
 		isOpen = !isOpen
+		console.log({ isOpen })
 	}
 </script>
 
-{#each options as option}
-	<button class="accordion" on:click={toggleAccord} class:open={isOpen} aria-label="open accordion">
-		<h2 class="gradient-text">{option.label}</h2>
+{#each options as { label, component }}
+	<button class="accordion" on:click={toggle} aria-label="open section">
+		<h2 class="gradient-text">{label}</h2>
 		{#if isOpen}
 			<span class="icon gradient-text">&minus;</span>
 		{:else}
@@ -26,7 +27,7 @@
 		{/if}
 	</button>
 	<div class="panel" class:open-panel={isOpen}>
-		<svelte:component this={option.component} />
+		<svelte:component this={component} />
 	</div>
 {/each}
 
