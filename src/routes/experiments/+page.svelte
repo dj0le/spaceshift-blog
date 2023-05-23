@@ -17,7 +17,9 @@
 	function resetQuiz() {
 		score = 0
 		quiz = getQuiz()
+		activeQuestion = 0
 	}
+
 	function addToScore() {
 		score = score + 1
 	}
@@ -29,10 +31,12 @@
 
 	<div class="experiment-one">
 		<div class="grid">
-			<h3 class="gradient-text">001 | Pop Quiz</h3>
+			<h3 class="gradient-text">- 001 | Pop Quiz -</h3>
 			<p>The high score is 9, can you beat it?</p>
-			<p>current score:</p>
-			<div class="gradient-text score">{score}</div>
+			<div class="score-card">
+				<p>your score:</p>
+				<div class="gradient-text score">{score}</div>
+			</div>
 
 			<button class="big-button" on:click={resetQuiz}>Start New Quiz</button>
 		</div>
@@ -91,6 +95,19 @@
 		font-weight: bold;
 		justify-self: center;
 	}
+	.score-card {
+		border: 2px solid var(--brand);
+		border-radius: 8px;
+		padding: 1rem;
+		margin: 1rem;
+		text-align: center;
+	}
+	.score-card p {
+		border-bottom: 2px solid var(--brand);
+		line-height: 2;
+		text-transform: uppercase;
+		margin-bottom: 0.5rem;
+	}
 	.grid {
 		display: grid;
 		gap: 1rem;
@@ -125,6 +142,7 @@
 		.big-button {
 			font-size: var(--font-size-1);
 			margin-block: 2rem;
+			width: 100%;
 		}
 		.sub-title {
 			border-bottom: 2px solid var(--brand);
@@ -133,12 +151,12 @@
 			margin-left: 0.1rem;
 			line-height: 2;
 		}
-		.grid {
-			justify-items: start;
-		}
 		.question {
 			font-size: var(--font-size-4);
 			margin-top: 1rem;
+		}
+		.score-card {
+			justify-self: center;
 		}
 	}
 </style>
