@@ -42,7 +42,7 @@ html {
 	);
 
 	/* light */
-	--brand-light: var(--cyan-5);
+	--brand-light: var(--cyan-6);
 	--text-1-light: var(--gray-8);
 	--text-2-light: var(--gray-7);
 	--text-3-light: var(--gray-8);

@@ -14,9 +14,6 @@
 				<a href="/blog" data-sveltekit-preload-data>blog</a>
 			</li>
 			<li>
-				<a href="/experiments" data-sveltekit-preload-data>experiments</a>
-			</li>
-			<li>
 				<a href="/contact" data-sveltekit-preload-data>contact</a>
 			</li>
 		</ul>
