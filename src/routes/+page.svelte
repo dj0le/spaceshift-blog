@@ -27,7 +27,9 @@
 		<p>welcome to the</p>
 		<h1 class="gradient-text">SPACEshift</h1>
 
-		<p>Engaging, accessible UI/UX design && Front-end development. Made with 100% stardust</p>
+		<p class="subtitle">
+			Engaging, accessible UI/UX design && Front-end development. Made with 100% stardust
+		</p>
 	</div>
 	<div>
 		{#each items as { label, component }}
@@ -54,6 +56,10 @@
 		font-family: var(--font-heading);
 		font-size: clamp(2rem, 15vw, 15rem);
 		font-weight: var(--font-weight-9);
+		line-height: 0.9;
+	}
+	.subtitle {
+		letter-spacing: 0.2rem;
 	}
 	.gradient-text {
 		background: var(--grad-text);
@@ -119,5 +125,13 @@
 		font-family: var(--font-heading);
 		font-size: clamp(2rem, 10vw, 10rem);
 		font-weight: var(--font-weight-8);
+	}
+	@media only screen and (max-width: 777px) {
+		H1 {
+			line-height: 1.5;
+		}
+		.subtitle {
+			letter-spacing: normal;
+		}
 	}
 </style>

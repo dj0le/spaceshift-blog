@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { title } from '$lib/config.js'
 	import { formatDate } from '$lib/utils.js'
-
 	export let data
 </script>
 
@@ -14,7 +13,10 @@
 <article>
 	<hgroup>
 		<div class="banner">
-			<h1>{data.meta.title}</h1>
+			<div class="post">
+				<p class="title">{data.meta.number}</p>
+				<p class="title">{data.meta.title}</p>
+			</div>
 		</div>
 		<p>{formatDate(data.meta.date)}</p>
 	</hgroup>
@@ -35,25 +37,25 @@
 		max-inline-size: var(--size-content-3);
 		margin-inline: auto;
 	}
-
-	h1 {
-		font-size: 2.5rem;
-		font-family: var(--font-heading);
-		color: var(--text-3);
-		text-transform: capitalize;
-		margin-left: 7rem;
+	.post {
+		display: grid;
+		grid-template-columns: 10% 1fr;
+		align-items: center;
 	}
-
 	.banner {
 		background-image: var(--banner);
-		padding-block: 2.75rem;
+		background-size: contain;
+		padding-block: 4rem;
 	}
-
 	p {
+		font-size: var(--font-size-fluid-1);
+		font-family: var(--font-heading);
+		font-weight: var(--font-weight-8);
+		color: var(--text-3);
+		margin-left: 2.5rem;
 		margin-top: var(--size-2);
 		color: var(--text-2);
 	}
-
 	.tags {
 		display: flex;
 		gap: var(--size-3);
@@ -61,9 +63,42 @@
 		padding-bottom: var(--size-7);
 		border-bottom: 1px solid var(--border);
 	}
-
+	.title {
+		font-size: var(--font-size-fluid-1);
+		font-family: var(--font-heading);
+		font-weight: var(--font-weight-8);
+		text-transform: capitalize;
+		color: var(--text-3);
+		margin-left: 4rem;
+	}
 	.tags > * {
 		padding: var(--size-2) var(--size-3);
 		border-radius: var(--radius-2);
+	}
+	@media (max-width: 768px) {
+		.banner {
+			background-image: var(--banner);
+			padding-block: 2.5rem;
+		}
+		.post {
+			grid-template-columns: 20% 1fr;
+		}
+		p {
+			margin-left: 2.25rem;
+		}
+		.title {
+			margin-left: 2rem;
+		}
+		.tags {
+			flex-wrap: wrap;
+			gap: var(--size-2);
+			margin-block: var(--size-4);
+			padding-bottom: 0;
+			border-bottom: 1px solid var(--border);
+		}
+		.tags > * {
+			padding: var(--size-2) var(--size-3);
+			border-radius: var(--radius-2);
+		}
 	}
 </style>
