@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { fade, fly } from 'svelte/transition'
 	import Question from './question.svelte'
 	let activeQuestion = 0
 	let score = 0
@@ -40,22 +41,31 @@
 
 			<button class="big-button" on:click={resetQuiz}>Start New Quiz</button>
 		</div>
+		<div>
+			{#await quiz}
+				Loading....
+			{:then data}
+				<p class="gradient-text question">Question #{activeQuestion + 1}:</p>
 
-		{#await quiz}
-			Loading....
-		{:then data}
-			<p class="gradient-text question">Question #{activeQuestion + 1}:</p>
-
-			{#each data.results as question, index}
-				{#if index === activeQuestion}
-					<Question {addToScore} {nextQuestion} {question} />
-				{/if}
-			{/each}
-		{/await}
+				{#each data.results as question, index}
+					{#if index === activeQuestion}
+						<div in:fly={{ y: -50 }} out:fly={{ y: 100 }} class="fade-wrapper">
+							<Question {addToScore} {nextQuestion} {question} />
+						</div>
+					{/if}
+				{/each}
+			{/await}
+		</div>
 	</div>
 </section>
 
 <style>
+	.experiment-one {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+		align-items: start;
+	}
 	h2 {
 		font-family: var(--font-heading);
 		font-size: clamp(2rem, 10vw, 10rem);
@@ -73,7 +83,6 @@
 	}
 	.question {
 		font-size: var(--font-size-4);
-		margin-top: 4rem;
 	}
 	.sub-title {
 		border-bottom: 2px solid var(--brand);
@@ -131,17 +140,24 @@
 		text-transform: uppercase;
 		letter-spacing: 0.35rem;
 	}
+	.fade-wrapper {
+		position: absolute;
+	}
 	@media only screen and (max-width: 777px) {
+		.experiment-one {
+			grid-template-columns: 1fr;
+		}
 		h2 {
 			margin-top: 2rem;
 		}
 		h3 {
 			text-align: start;
-			line-height: 1.5;
+			line-height: 1.25;
+			margin-top: 2rem;
 		}
 		.big-button {
 			font-size: var(--font-size-1);
-			margin-block: 2rem;
+			margin: 0;
 			width: 100%;
 		}
 		.sub-title {
@@ -150,10 +166,6 @@
 			margin-bottom: 2rem;
 			margin-left: 0.1rem;
 			line-height: 2;
-		}
-		.question {
-			font-size: var(--font-size-4);
-			margin-top: 1rem;
 		}
 		.score-card {
 			justify-self: center;

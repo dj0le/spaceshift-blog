@@ -21,9 +21,13 @@
 <style>
 	button {
 		transition: all 250ms ease-in-out;
+		border: 2px solid var(--brand);
+		border-radius: 8px;
+		padding: 0.75rem 2rem;
+		cursor: pointer;
 	}
-
 	button > * {
+		color: var(--brand);
 		display: flex;
 		gap: var(--size-2);
 	}

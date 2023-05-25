@@ -47,18 +47,19 @@
 	</div>
 	{#if isAnswered}
 		<h4>
-			{#if isCorrect}
-				<p class="correct">Correct!</p>
-			{:else}
-				<p class="incorrect">swing and a miss</p>
-			{/if}
+			<div class="grid-two">
+				<div>
+					{#if isCorrect}
+						<p class="correct">Correct!</p>
+					{:else}
+						<p class="incorrect">Nope!</p>
+					{/if}
+				</div>
+				<div>
+					<button class="next-button" on:click={nextQuestion}>Next</button>
+				</div>
+			</div>
 		</h4>
-	{/if}
-
-	{#if isAnswered}
-		<div>
-			<button class="big-button" on:click={nextQuestion}>Next</button>
-		</div>
 	{/if}
 </div>
 
@@ -73,14 +74,13 @@
 	p {
 		font-size: var(--font-size-4);
 	}
-	.big-button {
+	.next-button {
 		background-color: var(--brand);
 		color: var(--text-1-light);
 		font-size: var(--font-size-2);
 		font-weight: bold;
 		text-transform: uppercase;
 		letter-spacing: 0.35rem;
-		margin-block: 4rem;
 	}
 	.question {
 		margin-block: 2rem;
@@ -92,21 +92,34 @@
 		grid-template-columns: 40% 40%;
 		margin-block: 1rem;
 	}
+	.grid-two {
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: 40% 40%;
+		margin-block: 2rem;
+		align-items: center;
+		justify-content: space-between;
+	}
 	.correct {
 		color: var(--brand);
+		text-transform: uppercase;
+		font-weight: bold;
 	}
 	.incorrect {
 		color: red;
+		text-transform: uppercase;
+		font-weight: bold;
 	}
 	@media only screen and (max-width: 777px) {
 		p {
 			font-size: var(--font-size-2);
 		}
-		.big-button {
+		.next-button {
 			font-size: var(--font-size-1);
-			margin-block: 1rem;
+			width: 100%;
 		}
-		.grid {
+		.grid,
+		.grid-two {
 			grid-template-columns: 1fr 1fr;
 		}
 	}

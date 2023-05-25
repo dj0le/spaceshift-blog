@@ -11,14 +11,12 @@
 
 <div class="layout">
 	<Header />
-	<main class="container">
+	<main>
 		<PageTransition url={data.url}>
 			<slot />
 		</PageTransition>
 	</main>
-	<div class="containter">
-		<Footer />
-	</div>
+	<Footer />
 </div>
 
 <style>
