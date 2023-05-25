@@ -54,9 +54,16 @@
 		bottom: 0;
 		left: 0;
 		width: 100%;
-		height: 2px;
 		background-color: var(--brand);
+		border: 10px solid;
+		border-image-slice: 1;
+		border-width: 4px;
+		border-image-source: var(--grad-text);
+		border-left: 0;
+		border-right: 0;
+		border-top: 0;
 	}
+
 	li > a {
 		display: inline-block;
 		transition: all 150ms ease-in-out;
