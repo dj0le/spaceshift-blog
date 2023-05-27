@@ -41,7 +41,7 @@
 
 			<button class="big-button" on:click={resetQuiz}>Start New Quiz</button>
 		</div>
-		<div>
+		<div class="hold-wrapper">
 			{#await quiz}
 				Loading....
 			{:then data}
@@ -55,6 +55,12 @@
 					{/if}
 				{/each}
 			{/await}
+		</div>
+	</div>
+	<div class="experiment-two">
+		<div class="grid">
+			<h3 class="gradient-text">- 002 | Calculator -</h3>
+			<p>Do your numbers add up?</p>
 		</div>
 	</div>
 </section>
@@ -140,9 +146,12 @@
 		text-transform: uppercase;
 		letter-spacing: 0.35rem;
 	}
+	/* .hold-wrapper {
+		position: relative;
+	}
 	.fade-wrapper {
 		position: absolute;
-	}
+	} */
 	@media only screen and (max-width: 777px) {
 		.experiment-one {
 			grid-template-columns: 1fr;

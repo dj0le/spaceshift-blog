@@ -1,9 +1,17 @@
 <script lang="ts">
 	import * as config from '$lib/config'
+	import { Accordion, AccordionItem } from '$lib/components/accordion'
 	import Projects from '$lib/components/projects.svelte'
 	import About from '$lib/components/about.svelte'
 	import Tools from '$lib/components/tools.svelte'
 	import Keywords from '$lib/components/keywords.svelte'
+
+	const items = [
+		{ title: 'projects', content: Projects },
+		{ title: 'about', content: About },
+		{ title: 'tools', content: Tools },
+		{ title: 'keywords', content: Keywords }
+	]
 </script>
 
 <svelte:head>
@@ -19,12 +27,14 @@
 			Engaging, accessible UI/UX design && Front-end development. Made with 100% stardust
 		</p>
 	</div>
-	<div class="text-block">
-		<Projects />
-		<About />
-		<Tools />
-		<Keywords />
-	</div>
+	<Accordion collapse>
+		{#each items as item}
+			<AccordionItem>
+				<svelte:fragment slot="title">{item.title}</svelte:fragment>
+				<svelte:fragment slot="content"><svelte:component this={item.content} /></svelte:fragment>
+			</AccordionItem>
+		{/each}
+	</Accordion>
 </main>
 
 <style>
@@ -56,9 +66,6 @@
 	@media only screen and (max-width: 777px) {
 		main {
 			background-size: 55%;
-		}
-		.text-block {
-			margin-block: 4rem;
 		}
 		H1 {
 			line-height: 1.5;
