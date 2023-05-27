@@ -7,8 +7,12 @@
 	const componentId = crypto.randomUUID()
 	const { collapse, activeComponentId } = getAccordionOptions()
 
-	function setActive() {
-		$activeComponentId = componentId
+	function setActiveComponent() {
+		if ($activeComponentId === componentId) {
+			$activeComponentId = null
+		} else {
+			$activeComponentId = componentId
+		}
 	}
 
 	function toggleOpen() {
@@ -16,10 +20,10 @@
 	}
 
 	function handleClick() {
-		collapse ? setActive() : toggleOpen()
+		collapse ? setActiveComponent() : toggleOpen()
 	}
 
-	$: open && collapse && setActive()
+	$: open && collapse && setActiveComponent()
 	$: isActive = $activeComponentId === componentId
 	$: isOpen = collapse ? isActive : open
 </script>

@@ -14,6 +14,9 @@
 				<a href="/blog" data-sveltekit-preload-data>blog</a>
 			</li>
 			<li>
+				<a href="/experiments" data-sveltekit-preload-data>experiments</a>
+			</li>
+			<li>
 				<a href="/contact" data-sveltekit-preload-data>contact</a>
 			</li>
 		</ul>
@@ -29,26 +32,21 @@
 <style>
 	p {
 		color: var(--text-2);
-		padding-block: var(--size-3);
+		padding-block: var(--size-2);
 	}
 
 	.primary-nav,
 	.footer-nav {
 		display: flex;
 		gap: var(--size-4);
-		padding-block: var(--size-3);
 	}
 	a {
 		color: inherit;
 		text-decoration: none;
 	}
-	.title {
-		/* border-bottom: 1px solid var(--brand); */
-		padding-block: var(--size-1);
-	}
 	footer {
-		padding-block: var(--size-7);
 		padding-inline: var(--size-7);
+		padding-bottom: 1rem;
 		border-top: 1px solid var(--brand);
 	}
 	button {
@@ -61,12 +59,21 @@
 			align-items: center;
 		}
 		a {
-			color: inherit;
-			text-decoration: none;
+			padding: 1rem;
 		}
 		.footer-nav {
 			justify-self: end;
 			padding-block: var(--size-1);
+		}
+	}
+	@media (max-width: 768px) {
+		.primary-nav {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			padding-block: 1rem;
+		}
+		.footer-nav {
+			padding-top: 1rem;
 		}
 	}
 </style>

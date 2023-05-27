@@ -32,9 +32,10 @@
 			</p>
 			<p class="highlight">| Soft Skills |</p>
 			<p>
-				Marketing & PR, Quick learner, Creativity, Highly motivated, Expert troubleshooter, Solution
-				oriented, Relaxed but hard working, Attitude compatible with individual or team projects,
-				Project Management and large scale project experience, IT proficiency
+				Marketing & PR, <b>Quick learner</b>, Creativity, <b>Highly motivated</b>, Expert
+				troubleshooter, <b>Solution oriented</b>, Relaxed but hard working. Attitude compatible with
+				individual or team projects. Project Management and large scale project experience. IT
+				proficiency
 			</p>
 		</div>
 	</div>
@@ -60,12 +61,14 @@
 		transform: rotateY(-10deg);
 		border: 2px solid var(--brand);
 		border-radius: 4px;
+		background-image: var(--background-2);
 	}
 	.side-two {
 		padding: 1rem;
 		transform: rotateY(10deg);
 		border: 2px solid var(--brand);
 		border-radius: 4px;
+		background-image: var(--background-2);
 	}
 	.highlight {
 		font-size: var(--font-size-5);
@@ -88,15 +91,16 @@
 		.wall {
 			max-width: 100%;
 			perspective: 35em;
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: 1fr;
+			gap: 2rem;
 		}
 		.side-one {
 			padding: 8px;
-			transform: rotateY(-5deg);
+			transform: rotateX(-5deg);
 		}
 		.side-two {
 			padding: 8px;
-			transform: rotateY(5deg);
+			transform: rotateX(5deg);
 		}
 		.highlight {
 			font-size: var(--font-size-3);

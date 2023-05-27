@@ -4,12 +4,12 @@
 <h3>Do you like websites?</h3>
 <p>
 	I specialize in engaging UI/UX design, front-end development, and copywriting. I enjoy breathing
-	life into websites through design and CSS. I develop digital experiences around the concept that
-	the web should be accessible and inclusive for all.
+	life into websites by developing digital experiences around the belief that the web should be
+	accessible and inclusive for all.
 </p>
 <p>
 	I primarily code HTML, CSS & JS using Sveltekit, but am capable of using other frameworks. I also
-	have extensive knowledge in Wordpress designs and implementations
+	have extensive knowledge in Wordpress designs and implementations.
 </p>
 <p>
 	I currently live in beatufiul Bosnia & Hercegovina, but am willing to work anywhere world wide.

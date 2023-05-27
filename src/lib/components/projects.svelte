@@ -50,6 +50,17 @@
 		border: 2px solid var(--brand);
 		padding: var(--size-2);
 	}
+	h3 {
+		color: var(--brand);
+		text-align: center;
+	}
+	p {
+		font-size: var(--size-4);
+		text-align: center;
+	}
+	a {
+		font-size: var(--size-4);
+	}
 
 	@media only screen and (max-width: 767px) {
 		section {
