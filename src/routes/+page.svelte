@@ -1,5 +1,5 @@
 <script lang="ts">
-	import * as config from '$lib/config'
+	import { title, description } from '$lib/config'
 	import { Accordion, AccordionItem } from '$lib/components/accordion'
 	import Projects from '$lib/components/projects.svelte'
 	import About from '$lib/components/about.svelte'
@@ -15,8 +15,8 @@
 </script>
 
 <svelte:head>
-	<title>{config.title}</title>
-	<description>{config.description}</description>
+	<title>{title}</title>
+	<meta name={description} />
 </svelte:head>
 
 <main>
