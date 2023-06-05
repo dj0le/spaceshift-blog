@@ -6,7 +6,6 @@
 
 <svelte:head>
 	<title>{data.meta.title}</title>
-	<description>{config.description}</description>
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>

@@ -15,7 +15,7 @@
 <header class="primary-header">
 	<div class="nav-wrapper">
 		<div class="logo">
-			<img src="/djologo.png" width="48" height="48" alt="logo" />
+			<img src="/djowea.png" width="54" height="36" alt="logo" />
 			<a href="/" on:click={() => (current = 0)} class="title"><b>{config.title}</b></a>
 		</div>
 		<div class="hide-component">

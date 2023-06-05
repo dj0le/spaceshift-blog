@@ -16,7 +16,16 @@
 
 <svelte:head>
 	<title>{title}</title>
-	<meta name={description} />
+	<meta name="description" content={description} />
+	{@html `<script type="application/ld+json">
+{
+		"@context": "http://schema.org",
+		"@type": "WebSite",
+		  "name": "${title}",
+          "description": "${description}",
+		  "url": "https://space-shift.com/",
+		}
+	</script>`}
 </svelte:head>
 
 <main>
