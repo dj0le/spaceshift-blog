@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { fade, fly } from 'svelte/transition'
 	import Question from './question.svelte'
 	let activeQuestion = 0
 	let score = 0
 	let quiz = getQuiz()
+	let highScore = 5
 
 	async function getQuiz() {
 		const res = await fetch('https://opentdb.com/api.php?amount=10&category=28&type=multiple')
@@ -19,58 +19,68 @@
 		score = 0
 		quiz = getQuiz()
 		activeQuestion = 0
+		questionNumber = 1
 	}
 
 	function addToScore() {
 		score = score + 1
+	}
+
+	$: questionNumber = activeQuestion + 1
+
+	$: if (questionNumber > 10) {
+		if (score > highScore) {
+			alert('NEW HIGH SCORE!!')
+			highScore = score
+			resetQuiz()
+		} else {
+			resetQuiz()
+		}
 	}
 </script>
 
 <section>
 	<h2 class="gradient-text">EXPERIMENTS</h2>
 	<p class="sub-title">Random stuff, mostly nonsense</p>
+	<div class="experiments">
+		<div class="experiment-one">
+			<div class="grid">
+				<h3 class="gradient-text">- 001 | Pop Quiz -</h3>
+				<p>The high score is {highScore}, can you beat it?</p>
+				<div class="score-card">
+					<p>your score:</p>
+					<div class="gradient-text score">{score}</div>
+				</div>
 
-	<div class="experiment-one">
-		<div class="grid">
-			<h3 class="gradient-text">- 001 | Pop Quiz -</h3>
-			<p>The high score is 9, can you beat it?</p>
-			<div class="score-card">
-				<p>your score:</p>
-				<div class="gradient-text score">{score}</div>
+				<button class="big-button" on:click={resetQuiz}>Start New Quiz</button>
 			</div>
+			<div class="hold-wrapper">
+				{#await quiz}
+					Loading....
+				{:then data}
+					<p class="gradient-text question">Question #{questionNumber}:</p>
 
-			<button class="big-button" on:click={resetQuiz}>Start New Quiz</button>
-		</div>
-		<div class="hold-wrapper">
-			{#await quiz}
-				Loading....
-			{:then data}
-				<p class="gradient-text question">Question #{activeQuestion + 1}:</p>
-
-				{#each data.results as question, index}
-					{#if index === activeQuestion}
-						<div in:fly={{ y: -50 }} out:fly={{ y: 100 }} class="fade-wrapper">
+					{#each data.results as question, index}
+						{#if index === activeQuestion}
 							<Question {addToScore} {nextQuestion} {question} />
-						</div>
-					{/if}
-				{/each}
-			{/await}
+						{/if}
+					{/each}
+				{/await}
+			</div>
 		</div>
-	</div>
-	<div class="experiment-two">
-		<div class="grid">
-			<h3 class="gradient-text">- 002 | Calculator -</h3>
-			<p>Do your numbers add up?</p>
+		<div class="experiment-two">
+			<div class="grid">
+				<h3 class="gradient-text">- 002 | Calculator -</h3>
+				<p>Do your numbers add up?</p>
+			</div>
 		</div>
 	</div>
 </section>
 
 <style>
-	.experiment-one {
+	.experiments {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		gap: 2rem;
-		align-items: start;
 	}
 	h2 {
 		font-family: var(--font-heading);
@@ -146,16 +156,8 @@
 		text-transform: uppercase;
 		letter-spacing: 0.35rem;
 	}
-	/* .hold-wrapper {
-		position: relative;
-	}
-	.fade-wrapper {
-		position: absolute;
-	} */
+
 	@media only screen and (max-width: 777px) {
-		.experiment-one {
-			grid-template-columns: 1fr;
-		}
 		h2 {
 			margin-top: 2rem;
 		}

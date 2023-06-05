@@ -22,10 +22,10 @@
 		</ul>
 	</div>
 	<div class="footer-nav">
-		<button> <Rss /> </button>
-		<button> <Globe /> </button>
-		<button> <Github /> </button>
-		<button> <Mail /> </button>
+		<button aria-label="rss"> <Rss /> </button>
+		<button aria-label="language"> <Globe /> </button>
+		<button aria-label="github"> <Github /> </button>
+		<button aria-label="button"> <Mail /> </button>
 	</div>
 </footer>
 

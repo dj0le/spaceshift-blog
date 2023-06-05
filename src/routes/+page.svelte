@@ -16,6 +16,7 @@
 
 <svelte:head>
 	<title>{config.title}</title>
+	<description>{config.description}</description>
 </svelte:head>
 
 <main>

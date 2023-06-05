@@ -1,11 +1,12 @@
 <script lang="ts">
-	import { title } from '$lib/config.js'
+	import * as config from '$lib/config'
 	import { formatDate } from '$lib/utils.js'
 	export let data
 </script>
 
 <svelte:head>
 	<title>{data.meta.title}</title>
+	<description>{config.description}</description>
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>

@@ -6,6 +6,7 @@
 
 <svelte:head>
 	<title>{config.title}</title>
+	<description>{config.description}</description>
 </svelte:head>
 
 <h1 class="gradient-text">blog</h1>

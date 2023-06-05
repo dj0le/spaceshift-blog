@@ -15,7 +15,7 @@
 <header class="primary-header">
 	<div class="nav-wrapper">
 		<div class="logo">
-			<img src="/favicon.ico" alt="logo" />
+			<img src="/favicon.ico" width="48" height="48" alt="logo" />
 			<a href="/" on:click={() => (current = 0)} class="title"><b>{config.title}</b></a>
 		</div>
 		<div class="hide-component">
@@ -25,7 +25,7 @@
 			<Toggle />
 		</div>
 		<div class="hide-burger">
-			<button class="burger" on:click={toggleMenu} class:open={isMenuOpen}>
+			<button class="burger" on:click={toggleMenu} class:open={isMenuOpen} aria-label="menu">
 				<div class="bar-1" />
 				<div class="bar-2" />
 				<div class="bar-3" />
