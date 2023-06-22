@@ -1,4 +1,7 @@
 <script lang="ts">
+	function handleClick() {
+		alert('clicked')
+	}
 </script>
 
 <h1 class="gradient-text">Contact</h1>
@@ -6,6 +9,7 @@
 <div>
 	<p>email:</p>
 	<p>wonderbot@space-shift.com</p>
+	<button on:click={handleClick}> Click me </button>
 </div>
 
 <img class="stroke" src="/plus-square.svg" alt="aperture logo" />
