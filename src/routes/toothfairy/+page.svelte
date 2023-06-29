@@ -3,13 +3,13 @@
 
 <div class="grid">
 	<div class="column">
-		<img class="b2b-image" src="./b2bfrontpage.webp" alt="frontpage" />
+		<img class="b2b-image" src="./projectpics/b2bfrontpage.webp" alt="frontpage" />
 	</div>
 	<div class="column">
-		<img class="b2b-image" src="./b2bsignup.webp" alt="registration page" />
+		<img class="b2b-image" src="./projectpics/b2bsignup.webp" alt="registration page" />
 	</div>
 	<div class="column">
-		<img class="b2b-image" src="./b2bshop.webp" alt="shop page" />
+		<img class="b2b-image" src="./projectpics/b2bshop.webp" alt="shop page" />
 	</div>
 </div>
 
