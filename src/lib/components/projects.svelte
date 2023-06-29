@@ -17,7 +17,7 @@
 		<div class="column">
 			<h3>ToothFairy B2B</h3>
 			<p>Wholesale Buyer Portal</p>
-			<a href="https://toothfairybh.com">Visit Page</a>
+			<a href="https://rb.gy/c56mb">Visit Page</a>
 			<p>Solutions</p>
 		</div>
 		<div class="column">
@@ -26,9 +26,9 @@
 	</div>
 	<div class="card">
 		<div class="column">
-			<h3>Oliver Elwood</h3>
+			<h3>Jovlabs Ai</h3>
 			<p>Single Landing Page</p>
-			<a href="https://toothfairybh.com">Visit Page</a>
+			<a href="https://jovlabs.vercel.app">Visit Page</a>
 			<p>Solutions</p>
 		</div>
 		<div class="column">
