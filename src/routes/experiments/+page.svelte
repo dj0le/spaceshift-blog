@@ -158,6 +158,9 @@
 	}
 
 	@media only screen and (max-width: 777px) {
+		.experiments {
+			grid-template-columns: 1fr;
+		}
 		h2 {
 			margin-top: 2rem;
 		}
