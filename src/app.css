@@ -170,7 +170,9 @@ html {
 img {
 	border-radius: var(--radius-2);
 }
-
+a {
+	text-decoration: none;
+}
 ul,
 ol {
 	list-style: none;
@@ -237,7 +239,7 @@ button {
 }
 
 .prose :is(a) {
-	color: var(--link);
+	color: var(--brand);
 }
 
 .prose pre {

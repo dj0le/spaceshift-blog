@@ -4,6 +4,8 @@
 	import Footer from './footer.svelte'
 	import 'open-props/style'
 	import 'open-props/normalize'
+	import 'open-props/animations.min.css'
+	import 'open-props/easings.min.css'
 	import '../app.css'
 
 	export let data

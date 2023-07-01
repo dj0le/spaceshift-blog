@@ -101,7 +101,7 @@
 		width: 85%;
 	}
 
-	@media (min-width: 768px) {
+	@media (min-width: 869px) {
 		nav {
 			display: flex;
 			justify-content: space-between;
@@ -117,7 +117,7 @@
 		}
 	}
 
-	@media only screen and (max-width: 767px) {
+	@media only screen and (max-width: 869px) {
 		.drop-menu {
 			display: block;
 		}

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import * as config from '$lib/config'
-	import { Rss, Github, Mail, Globe } from 'lucide-svelte'
+	import { Rss, Github, Mail } from 'lucide-svelte'
 </script>
 
 <footer>
@@ -23,9 +23,8 @@
 	</div>
 	<div class="footer-nav">
 		<button aria-label="rss"> <Rss /> </button>
-		<button aria-label="language"> <Globe /> </button>
-		<button aria-label="github"> <Github /> </button>
-		<button aria-label="button"> <Mail /> </button>
+		<a href="https://github.com/dj0le" aria-label="github"> <Github /> </a>
+		<a href="mailto: wonderbot@space-shift.com" aria-label="email"> <Mail /> </a>
 	</div>
 </footer>
 

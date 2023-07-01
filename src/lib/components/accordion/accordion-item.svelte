@@ -77,7 +77,6 @@
 		text-align: left;
 		cursor: pointer;
 	}
-
 	span.icon {
 		font-size: clamp(2rem, 10vw, 10rem);
 		font-weight: var(--font-weight-8);

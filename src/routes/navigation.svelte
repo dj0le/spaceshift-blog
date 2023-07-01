@@ -79,7 +79,7 @@
 			margin-block: 0;
 		}
 	}
-	@media only screen and (max-width: 767px) {
+	@media only screen and (max-width: 869px) {
 		li {
 			font-size: 1.5rem;
 			list-style: none;

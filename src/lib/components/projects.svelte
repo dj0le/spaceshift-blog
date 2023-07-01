@@ -108,6 +108,11 @@
 		padding: 1rem 1.75rem;
 		text-decoration: none;
 	}
+	.project-button:hover {
+		outline: 2px solid var(--brand);
+		outline-offset: 8px;
+		transition: 0.2s all ease;
+	}
 	.project-image {
 		border-radius: 8px;
 		border: 2px solid var(--brand);
