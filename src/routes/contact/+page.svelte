@@ -41,7 +41,7 @@
 			</a>
 		</div>
 		<div>
-			<a class="card" href="www.linkedin.com/in/josh-weand" aria-label="linkedin">
+			<a class="card" href="https://www.linkedin.com/in/josh-weand" aria-label="linkedin">
 				<Linkedin />
 				<p class="card-text">LinkedIn</p>
 			</a>
