@@ -60,14 +60,6 @@
 	</div>
 </div>
 
-<div class="visual-interest">
-	<span class="pill" style="background-color:var(--brand)" />
-	<span class="pill" style="background-color:var(--brand)" />
-	<span class="pill" style="background-color:var(--brand)" />
-	<span class="pill" style="background-color:var(--brand)" />
-	<span class="pill" style="background-color:var(--brand)" />
-</div>
-
 <style>
 	a {
 		color: var(--brand);
@@ -102,31 +94,7 @@
 		gap: 1rem;
 		color: var(--text-1);
 	}
-	.visual-interest {
-		display: flex;
-		align-items: center;
-		gap: var(--size-2);
-	}
-	.pill {
-		--size: var(--size-5);
-		border-radius: var(--radius-round);
-		box-shadow: var(--inner-shadow-0);
-		inline-size: 6.7%;
-		block-size: var(--size);
-		display: grid;
-		place-content: center;
-		color: #000;
-		text-shadow: 0 0 1px hsl(0 0% 0% / 40%);
-	}
-	/* @media (prefers-reduced-motion: no-preference) {
-		.pill {
-			transition: transform 2s var(--ease-squish-5) 3s;
-		}
-	}
-	.pill::before {
-		opacity: 0;
-		transition: opacity 0.4s var(--ease-out-3);
-	} */
+
 	h1 {
 		font-family: var(--font-heading);
 		font-size: clamp(2rem, 18vw, 15rem);
