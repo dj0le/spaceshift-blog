@@ -1,5 +1,5 @@
 <h1>Designs and Inspirations</h1>
-<div class="wrapper">
+<div>
 	<div class="column">
 		<div class="project-grid">
 			<img class="project-image" src="./projectpics/designsmall-1.webp" alt="jovlab ai" />
@@ -13,17 +13,26 @@
 			<img class="project-image" src="./projectpics/designsmall-9.webp" alt="jovlab ai" />
 		</div>
 	</div>
-	<a class="project-button" href="/">Back</a>
+	<div class="wrapper">
+		<a class="project-button" href="/">Back</a>
+	</div>
 </div>
 
 <style>
 	.column {
 		padding: 2rem;
 	}
+	a {
+		color: var(--brand);
+	}
+	.wrapper {
+		margin-block: 2rem;
+		text-align: center;
+	}
 	.project-button {
 		border: 2px solid var(--brand);
 		border-radius: 8px;
-		padding: 1rem 1.75rem;
+		padding: 1rem 3.75rem;
 		text-decoration: none;
 	}
 	.project-button:hover {
