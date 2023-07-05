@@ -4,10 +4,11 @@
 <h3>Do you like websites?</h3>
 <p>
 	I've always felt at home in the IT industry, but it was in Front End Development where I found the
-	perfect combination integrating the technical and the creative.I enjoy breathing life into
-	websites by developing digital experiences around the belief that the web should be accessible and
-	inclusive for all. If you are searching for a UI Designer or Front End Developer, let's connect:
+	perfect combination integrating the technical and the creative. I bring websites to life by
+	developing digital experiences around the belief that the web should be accessible and inclusive
+	for all.
 </p>
+<p>If you are searching for a UI Designer or Front End Developer, let's connect:</p>
 <div>
 	<a class="project-button" href="mailto: josh@space-shift.com" aria-label="email">Contact</a>
 </div>

@@ -22,7 +22,7 @@
 		</ul>
 	</div>
 	<div class="footer-nav">
-		<button aria-label="rss"> <Rss /> </button>
+		<a href="https://space-shift.com/rss.xml" aria-label="rss"> <Rss /> </a>
 		<a href="https://github.com/dj0le" aria-label="github"> <Github /> </a>
 		<a href="mailto: wonderbot@space-shift.com" aria-label="email"> <Mail /> </a>
 	</div>
@@ -47,9 +47,6 @@
 		padding-inline: var(--size-7);
 		padding-bottom: 1rem;
 		border-top: 1px solid var(--brand);
-	}
-	button {
-		margin-right: 24px;
 	}
 	@media (min-width: 768px) {
 		footer {
