@@ -11,12 +11,12 @@
 <div class="reflection">
 	<div class="wall">
 		<div class="side-one">
-			<p class="highlight">| Technical Software |</p>
+			<p class="highlight">| Technical |</p>
 			<p>
-				Cloudflare, CLI, WSL, Vercel, MDsvex, Google Pagespeed Insights, Redis, Postgres, SQL,
+				Cloudflare, CLI, WSL, Git, Vercel, Rest APIs, Pagespeed Insights, Redis, Postgres, SQL,
 				Putty, Node, Vite
 			</p>
-			<p class="highlight">| Creative Software |</p>
+			<p class="highlight">| Creative |</p>
 			<p>
 				Scrivener, Penpot, GSAP, Rive, Tailwind, DaisyUI, SkeletonUI, Open-Props, FFMPEG, Resolume
 				Arena, StableLM, StableStudio

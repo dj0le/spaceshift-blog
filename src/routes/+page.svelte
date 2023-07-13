@@ -34,7 +34,8 @@
 		<h1 class="gradient-text">SPACEshift</h1>
 
 		<p class="subtitle">
-			Engaging, accessible UI/UX design && Front-end development. Made with 100% stardust
+			Hello, I'm Josh, and this is my portfolio. Engaging, accessible UI/UX design && Front-end
+			development. Made with 100% stardust.
 		</p>
 	</div>
 	<Accordion collapse>
