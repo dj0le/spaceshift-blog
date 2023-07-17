@@ -8,15 +8,15 @@
 			class:current={current === 0}
 			on:click={() => (current = 0)}
 			href="/"
-			data-sveltekit-preload-data>portfolio</a
+			data-sveltekit-preload-data>Portfolio</a
 		>
 	</li>
 	<li>
 		<a
 			class:current={current === 1}
 			on:click={() => (current = 1)}
-			href="/blog"
-			data-sveltekit-preload-data>blog</a
+			href="/ghostwriter"
+			data-sveltekit-preload-data>GhostWriter</a
 		>
 	</li>
 	<li>
@@ -24,7 +24,7 @@
 			class:current={current === 2}
 			on:click={() => (current = 2)}
 			href="/experiments"
-			data-sveltekit-preload-data>experiments</a
+			data-sveltekit-preload-data>Experiments</a
 		>
 	</li>
 	<li>
@@ -32,7 +32,7 @@
 			class:current={current === 3}
 			on:click={() => (current = 3)}
 			href="/contact"
-			data-sveltekit-preload-data>contact</a
+			data-sveltekit-preload-data>Contact</a
 		>
 	</li>
 </ul>

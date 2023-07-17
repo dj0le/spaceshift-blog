@@ -11,7 +11,7 @@
 				<a href="/" data-sveltekit-preload-data>portfolio</a>
 			</li>
 			<li>
-				<a href="/blog" data-sveltekit-preload-data>blog</a>
+				<a href="/ghostwriter" data-sveltekit-preload-data>ghostwriter</a>
 			</li>
 			<li>
 				<a href="/experiments" data-sveltekit-preload-data>experiments</a>

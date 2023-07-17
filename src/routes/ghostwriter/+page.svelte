@@ -8,7 +8,8 @@
 	<title>{config.title}</title>
 </svelte:head>
 
-<h1 class="gradient-text">blog</h1>
+<h1 class="gradient-text">ghostwriter</h1>
+<p class="subtext">Wanna read a book co-written with an LLM?</p>
 <ul class="posts">
 	{#each data.posts as post}
 		<div class="banner">
@@ -45,9 +46,13 @@
 		color: var(--text-3);
 		margin-left: 2.5rem;
 	}
+	.subtext {
+		color: var(--brand);
+		margin: 0 0.5rem;
+	}
 	h1 {
 		font-family: var(--font-heading);
-		font-size: clamp(2rem, 25vw, 15rem);
+		font-size: clamp(2rem, 11vw, 13rem);
 		font-weight: var(--font-weight-9);
 	}
 	.gradient-text {
