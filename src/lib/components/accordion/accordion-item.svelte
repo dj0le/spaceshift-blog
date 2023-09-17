@@ -51,7 +51,7 @@
 
 {#if isOpen}
 	<div
-		transition:slide|local
+		transition:slide={{ duration: 600 }}
 		role="region"
 		aria-hidden={!isOpen}
 		aria-labelledby="accordion-{componentId}"
@@ -92,7 +92,7 @@
 	button.drop-down:hover span.icon,
 	button.drop-down:active span.icon {
 		opacity: 1;
-		transition: all ease-in-out 400ms;
+		transition: all ease-in-out 500ms;
 	}
 
 	h2 {

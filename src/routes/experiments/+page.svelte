@@ -70,8 +70,14 @@
 		</div>
 		<div class="experiment-two">
 			<div class="grid">
-				<h3 class="gradient-text">- 002 | Calculator -</h3>
-				<p>Do your numbers add up?</p>
+				<h3 class="gradient-text">- 002 | Art? -</h3>
+				<p>background</p>
+				<div class="visual-interest">
+					<p>background</p>
+					<span class="pill" style="boder: 2px solid red" />
+					<span class="pill" style="background-color:var(--brand)" />
+				</div>
+				<p>background</p>
 			</div>
 		</div>
 	</div>
@@ -155,6 +161,27 @@
 		font-weight: bold;
 		text-transform: uppercase;
 		letter-spacing: 0.35rem;
+	}
+	.visual-interest {
+		display: flex;
+		align-items: center;
+		gap: 0;
+	}
+	.pill {
+		--size: var(--size-5);
+		box-shadow: var(--inner-shadow-0);
+		inline-size: 25%;
+		block-size: var(--size);
+		display: grid;
+		place-content: center;
+		color: #000;
+		text-shadow: 0 0 1px hsl(0 0% 0% / 40%);
+		transition: transform 0.25s var(--ease-squish-3) 1.5s;
+	}
+	.pill:is(:hover, :focus) {
+		transform: scale(1.5);
+		transition-delay: 0ms;
+		transition-timing-function: var(--ease-elastic-5);
 	}
 
 	@media only screen and (max-width: 777px) {

@@ -111,22 +111,20 @@
 		--size: var(--size-5);
 		border-radius: var(--radius-round);
 		box-shadow: var(--inner-shadow-0);
-		inline-size: 6.7%;
+		inline-size: 25%;
 		block-size: var(--size);
 		display: grid;
 		place-content: center;
 		color: #000;
 		text-shadow: 0 0 1px hsl(0 0% 0% / 40%);
+		transition: transform 0.25s var(--ease-squish-3) 1.5s;
 	}
-	/* @media (prefers-reduced-motion: no-preference) {
-		.pill {
-			transition: transform 2s var(--ease-squish-5) 3s;
-		}
+	.pill:is(:hover, :focus) {
+		transform: scale(1.5);
+		transition-delay: 0ms;
+		transition-timing-function: var(--ease-elastic-5);
 	}
-	.pill::before {
-		opacity: 0;
-		transition: opacity 0.4s var(--ease-out-3);
-	} */
+
 	h1 {
 		font-family: var(--font-heading);
 		font-size: clamp(2rem, 18vw, 15rem);
