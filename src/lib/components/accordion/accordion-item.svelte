@@ -51,7 +51,7 @@
 
 {#if isOpen}
 	<div
-		transition:slide={{ duration: 600 }}
+		transition:slide|global={{ duration: 600 }}
 		role="region"
 		aria-hidden={!isOpen}
 		aria-labelledby="accordion-{componentId}"
