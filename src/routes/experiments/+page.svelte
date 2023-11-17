@@ -4,6 +4,7 @@
 	let score = 0
 	let quiz = getQuiz()
 	let highScore = 5
+	let joke
 
 	async function getQuiz() {
 		const res = await fetch('https://opentdb.com/api.php?amount=10&category=28&type=multiple')
@@ -36,6 +37,16 @@
 		} else {
 			resetQuiz()
 		}
+	}
+
+	async function fetchDadJoke() {
+		const res = await fetch('https://icanhazdadjoke.com/', {
+			headers: {
+				Accept: 'text/plain'
+			}
+		})
+		joke = await res.text()
+		return joke
 	}
 </script>
 
@@ -70,14 +81,14 @@
 		</div>
 		<div class="experiment-two">
 			<div class="grid">
-				<h3 class="gradient-text">- 002 | Art? -</h3>
-				<p>background</p>
-				<div class="visual-interest">
-					<p>background</p>
-					<span class="pill" style="boder: 2px solid red" />
-					<span class="pill" style="background-color:var(--brand)" />
-				</div>
-				<p>background</p>
+				<h3 class="gradient-text">- 002 | Dad Jokes? -</h3>
+				<p>Are you ready to laugh?</p>
+				<button class="big-button" on:click={fetchDadJoke}>Next Dad Joke</button>
+
+				<p class="gradient-text question">Joke Scroll</p>
+				{#if joke !== undefined}
+					<p class="question">{joke}</p>
+				{/if}
 			</div>
 		</div>
 	</div>

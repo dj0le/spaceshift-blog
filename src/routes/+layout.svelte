@@ -7,6 +7,9 @@
 	import 'open-props/animations.min.css'
 	import 'open-props/easings.min.css'
 	import '../app.css'
+	import { setupViewTransition } from 'sveltekit-view-transition'
+
+	setupViewTransition()
 
 	export let data
 </script>
