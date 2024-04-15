@@ -19,6 +19,20 @@
 	</div>
 	<div class="card">
 		<div class="column">
+			<h3>PACE</h3>
+			<p>
+				"Track your time from the command line!" Pace is an open source rust based app for cli time
+				tracking / mgmt. As a mantainer of the project, I designed the logo, the graphics and
+				branding, and the frontend layout. I coded the page in Sveltekit with Open-Props.
+			</p>
+			<a class="project-button" href="https://pace.cli.rs/">Visit PACE</a>
+		</div>
+		<div class="column">
+			<img class="project-image" src="./projectpics/pacethumb.webp" alt="tf b2b" />
+		</div>
+	</div>
+	<div class="card">
+		<div class="column">
 			<h3>ToothFairy B2B</h3>
 			<p>
 				B2B platform for retailers in Bosnia built on Svelte and MedusaJS. Other technologies
