@@ -2,28 +2,30 @@
 	const tools = [
 		{
 			label: 'primary',
-			contents: [{ name: 'HTML' }, { name: 'CSS' }, { name: 'JavaScript' }]
+			contents: [{ name: 'HTML' }, { name: 'CSS' }, { name: 'JavaScript' }, { name: 'Python' }]
 		},
 		{
 			label: 'technical',
 			contents: [
-				{ name: 'Svelte' },
 				{ name: 'Sveltekit' },
-				{ name: 'VS Code' },
-				{ name: 'Github' },
-				{ name: 'Databases' },
+				{ name: 'FastAPI' },
+				{ name: 'SQLite' },
+				{ name: 'Typescript' },
+				{ name: 'PostGres' },
 				{ name: 'Wordpress' },
-				{ name: 'Typescript' }
+				{ name: 'Github' },
+				{ name: 'Ollama' }
 			]
 		},
 		{
 			label: 'creative',
 			contents: [
 				{ name: 'Figma' },
+				{ name: 'Penpot' },
 				{ name: 'Photoshop' },
 				{ name: 'Illustrator' },
 				{ name: 'Inkscape' },
-				{ name: 'After Effects' }
+				{ name: 'Comfy UI' }
 			]
 		}
 	]

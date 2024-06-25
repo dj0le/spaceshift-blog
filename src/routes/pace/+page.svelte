@@ -1,22 +1,19 @@
-<h1>Tooth Fairy B2B</h1>
+<h1>Mech Index</h1>
 <p>Screenshots</p>
 
 <div class="grid">
 	<div class="column">
-		<img src="./projectpics/b2bfrontpage.webp" alt="frontpage" />
+		<img src="./projectpics/pacelight.webp" alt="Light Version" />
 	</div>
 	<div class="column">
-		<img src="./projectpics/b2bsignup.webp" alt="registration page" />
-	</div>
-	<div class="column">
-		<img src="./projectpics/b2bshop.webp" alt="shop page" />
+		<img src="./projectpics/pacedark.webp" alt="Dark Version" />
 	</div>
 </div>
 
 <style>
 	.grid {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
 		gap: 2rem;
 		justify-items: center;
 	}
