@@ -6,10 +6,10 @@
 		<img src="./projectpics/toothfairy.webp" alt="frontpage" />
 	</div>
 	<div class="column">
-		<img src="./projectpics/toothfairyxmas.webp" alt="registration page" />
+		<img src="./projectpics/tfxmas.webp" alt="Holiday Variant" />
 	</div>
 	<div class="column">
-		<img src="./projectpics/b2bshop.webp" alt="shop page" />
+		<img src="./projectpics/toothfairy2.webp" alt="Previous Version" />
 	</div>
 	<div class="column">
 		<img src="./projectpics/b2bfrontpage.webp" alt="frontpage" />

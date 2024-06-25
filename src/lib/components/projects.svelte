@@ -41,31 +41,20 @@
 	</div>
 	<div class="card">
 		<div class="column">
-			<h3>ToothFairy</h3>
+			<h3>ToothFairy B2C & B2B</h3>
 			<p>
-				Full stack implementation of ecommerce solution. I designed the entire site and have
-				maintained it for 3+ years. It receives 10-15 thousand unique visits per month. 100% Google
-				Lighthouse / Page Speed Insight scores. Focus on SEO best practices and accessible UI
-				design.
+				Full stack implementation of ecommerce solution. I designed the entire site and maintained
+				it for 4+ years. It receives 1 thousand unique visits per day and ~6-8 gigs of data transfer
+				per month.
 			</p>
-			<a class="project-button" href="https://toothfairybh.com">Visit Page</a>
+			<div class="button-grid">
+				<a class="project-button" href="https://toothfairybh.com">Visit Page</a>
+				<a class="project-button" href="https://github.com/dj0le/tfb2b">Github</a>
+				<a class="project-button" href="/toothfairy">Screenshots</a>
+			</div>
 		</div>
 		<div class="column">
 			<img class="project-image" src="./projectpics/toothfairythumb.webp" alt="toothfairy" />
-		</div>
-	</div>
-
-	<div class="card">
-		<div class="column">
-			<h3>ToothFairy B2B</h3>
-			<p>
-				B2B platform for retailers in Bosnia built on Svelte and MedusaJS. Other technologies
-				include Redis, Postgres, Algolia search, and the Medusa admin CMS.
-			</p>
-			<a class="project-button" href="/toothfairy">Full Details</a>
-		</div>
-		<div class="column">
-			<img class="project-image" src="./projectpics/tfb2bthumb.webp" alt="tf b2b" />
 		</div>
 	</div>
 	<div class="card">
@@ -76,7 +65,10 @@
 				Prisma, Sql lite, Open-props and the Oobabooga api. Svelte based front-end, with chatbots
 				running on Python.
 			</p>
-			<a class="project-button" href="https://jovlabs.vercel.app">Visit Page</a>
+			<div class="button-grid">
+				<a class="project-button" href="https://jovlabs.vercel.app">Visit Page</a>
+				<a class="project-button" href="https://github.com/dj0le/jovlabs">Github</a>
+			</div>
 		</div>
 		<div class="column">
 			<img class="project-image" src="./projectpics/jovlabthumb.webp" alt="jovlab ai" />
