@@ -4,6 +4,25 @@
 <section>
 	<div class="card">
 		<div class="column">
+			<h3>Mech Index</h3>
+			<p>
+				Front end implementation for the mech index. It's a database of many popular Battletech
+				mechs. The front end is build in svelte 5 with typescript, and uses Open Props for efficient
+				CSS styling. The back end was written in Python, using FastAPI. The database is SQL Lite.
+				The project is hosted on a VPS running Coolify.
+			</p>
+			<div class="button-grid">
+				<a class="project-button" href="https://mech-index.com">Visit Page</a>
+				<a class="project-button" href="https://github.com/dj0le/fastmech">Github</a>
+				<a class="project-button" href="/mechindex">Screenshots</a>
+			</div>
+		</div>
+		<div class="column">
+			<img class="project-image" src="./projectpics/mechindexthumb.webp" alt="mech index" />
+		</div>
+	</div>
+	<div class="card">
+		<div class="column">
 			<h3>ToothFairy</h3>
 			<p>
 				Full stack implementation of ecommerce solution. I designed the entire site and have
@@ -136,6 +155,13 @@
 		gap: 1rem;
 		grid-template-columns: 1fr 1fr 1fr;
 	}
+	.button-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 16px;
+		text-align: center;
+		justify-content: space-between;
+	}
 
 	@media only screen and (max-width: 767px) {
 		section {
@@ -150,6 +176,13 @@
 		}
 		.column {
 			padding: 0.5rem;
+		}
+		.button-grid {
+			grid-template-columns: 1fr;
+			justify-items: stretch;
+
+			padding-inline: 16px;
+			gap: 32px;
 		}
 	}
 </style>
