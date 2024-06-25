@@ -3,6 +3,15 @@
 
 <div class="grid">
 	<div class="column">
+		<img src="./projectpics/toothfairy.webp" alt="frontpage" />
+	</div>
+	<div class="column">
+		<img src="./projectpics/toothfairyxmas.webp" alt="registration page" />
+	</div>
+	<div class="column">
+		<img src="./projectpics/b2bshop.webp" alt="shop page" />
+	</div>
+	<div class="column">
 		<img src="./projectpics/b2bfrontpage.webp" alt="frontpage" />
 	</div>
 	<div class="column">
